@@ -82,10 +82,25 @@ table {
 .jobs-header {
     font-size: 200%;
     color: whitesmoke;
-    padding-bottom: 1%;
+    padding-bottom: 1.7%;
+    width: 100%;
+    height: 28%;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
     }
     .jobs-para {
-    color: whitesmoke;    
+    color: whitesmoke; 
+    font-size: 100%;    
+    width: 65%;
+    height: 65px;    
+    overflow: hidden !important; 
+    text-overflow: ellipsis !important;     
+        display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
     }    
 .jobs-wrapper {
   padding-top: 20px;    
@@ -99,7 +114,6 @@ table {
 .jobs-button {color:#FFF!important;
 	display: inline-block;
 	padding: 12px 18px;
-	color: #FFF;
 	border: 1px solid #FFF; 
     background-color: transparent;
 	text-decoration: none;
@@ -108,9 +122,9 @@ table {
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
 	border-radius: 0px;
-	-webkit-transition: background-color 300ms ease;
-	-moz-transition: background-color 300ms ease;
-	transition: background-color 300ms ease;
+	-webkit-transition: background-color 1000ms ease;
+	-moz-transition: background-color 1000ms ease;
+	transition: background-color 1000ms ease;
 	cursor: pointer;   
     }   
  .jobs-right{float:right!important}    
@@ -126,17 +140,21 @@ table {
 <section class="jobs">
 <div class="jobs-wrapper">
 <div class="jobs-engineer jobs-center">
-<h2 class="jobs-header"> Server Engineer</h2>
-    <p class="jobs-para jobs-left">HAHAHAHAHAHAHA</p>
+<h2 class="jobs-header jobs-left"> Server Engineer</h2>
+    <p class="jobs-para jobs-left">HAHAHAHAHAHAHADDDDDDDDDDDDDDD
+    DDDDDDDDDDDDD
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+   DDDDDDDDDDDDDDDDDDDDDDDDDDD
+   DDDDDDDDDDDDDDDDDDDDDDDDDD</p>
     <button class="jobs-button jobs-right jobs-hover-white">More &raquo;</button>
 </div>
 <div class="jobs-web jobs-center">
-<h2 class="jobs-header"> Web Application Engineer</h2>
+<h2 class="jobs-header  jobs-left"> Web Application Engineer</h2>
     <p class="jobs-para jobs-left">HAHAHAHAHAHAHA</p>
     <button class="jobs-button jobs-right jobs-hover-white">More &raquo;</button>
 </div>
 <div class="jobs-other jobs-center">
-<h2 class="jobs-header"> Other</h2>  
+<h2 class="jobs-header  jobs-left"> Other Jobs</h2>  
  <p class="jobs-para jobs-left">HAHAHAHAHAHAHA</p>
  <button class="jobs-button jobs-right jobs-hover-white">More &raquo;</button>  
 </div>    
