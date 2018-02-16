@@ -1,0 +1,31 @@
+.oneday-wrapper {
+    background: url(../image/8G4A0836.jpg) no-repeat center center;
+    background-size: cover;
+    height: 2000px;
+}
+
+.return-button {
+    margin-top: 10px;
+    display: block;
+    position: fixed;
+    height: 90px;
+    width: 90px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.08);
+    text-indent: -9999px;
+}
+
+.return-button-in {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.oneday-line-wrapper {
+    height: 100%;
+   float: right;
+}
+
+.oneday-title {
+    position: absolute;
+}
