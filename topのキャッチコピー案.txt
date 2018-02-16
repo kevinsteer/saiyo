@@ -1,43 +1,31 @@
-{{presidents message}}
-    ŽÐ’·‚Ì—”O‚ðÐ‰î‚·‚é‚±‚Æ‚Å‰ïŽÐ—”O‚Ìà–¾‚Æ‚·‚éB
-    —áA
-    u{“¡‚±‚¤•½ ‚©‚ç‚ÌƒƒbƒZ[ƒWvi‰¼j
-    ŽÐ’·‚ÌŽÊ^‚ðˆê–‡A‚»‚Ì’†‚ÉuÀ‰E‚Ì–Áv
-    ‚»‚Ì‰º‚ÉƒƒbƒZ[ƒW‚Ì‚æ‚¤‚ÈŒ`
-    ŽQlƒTƒCƒgFhttp://recruit.softbank.jp/graduate/company/vision_message/
+ï»¿{{presidents message}}
+    ç¤¾é•·ã®ç†å¿µã‚’ç´¹ä»‹ã™ã‚‹ã“ã¨ã§ä¼šç¤¾ç†å¿µã®èª¬æ˜Žã¨ã™ã‚‹ã€‚
+    ä¾‹
+    ã€Œé ˆè—¤ã“ã†å¹³ ã‹ã‚‰ã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã€ï¼ˆä»®ï¼‰
+    ç¤¾é•·ã®å†™çœŸã‚’ä¸€æžšã€ãã®ä¸­ã«ã€Œåº§å³ã®éŠ˜ã€
+    ãã®ä¸‹ã«ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã®ã‚ˆã†ãªå½¢
+    å‚è€ƒã‚µã‚¤ãƒˆï¼šhttp://recruit.softbank.jp/graduate/company/vision_message/
     
 
 {{JOBs}}
-    ZƒCƒ“ƒtƒ‰ƒCƒ[ƒW
+    ã€‡ã‚¤ãƒ³ãƒ•ãƒ©ã‚¤ãƒ¡ãƒ¼ã‚¸
+    ã€‡WEBã‚¨ãƒ³ã‚¸ãƒ‹ã‚¢
+    ã€‡other jobs
 
-    ‚Â‚È‚°‚é
-    “¹‚ðì‚éA“Í‚¯‚é
-    ‰‚Ì‰º‚Ì—ÍŽ‚¿
-
-    ¶–½üAƒ‰ƒCƒtƒ‰ƒCƒ“
-
-
-    ZWEBƒGƒ“ƒWƒjƒA
-
-    ‰ÔŒ`E‹Æ
-    ƒfƒUƒCƒ“•ûŒü
+    Aæ¡ˆ
+    ï¼ï¼ï¼ã€Žä¸–ç•Œã€ã‚’ã¤ãªãï¼ï¼ï¼
+    ï¼ï¼ï¼ã€Žæœªæ¥ã€ã‚’ã¤ãã‚Šã ã™ï¼ï¼ï¼
+    ï¼ï¼ï¼ã€Žäººã€ã‚’ã†ã”ã‹ã™ï¼ï¼ï¼
 
 
-
-    ˆÄA
-    w¢ŠEx‚ð‚Â‚È‚®
-    w–¢—ˆx‚ð‚Â‚­‚è‚¾‚·
-    wlx‚ð‚¤‚²‚©‚·
-
-
-    ˆÄB
-    –l‚ª‘I‚ñ‚¾ƒƒP
-    –l‚Ìi‚ñ‚¾“¹
-    Ž„‚Ì‘I‘ð
+    Bæ¡ˆ
+    åƒ•ãŒé¸ã‚“ã ãƒ¯ã‚±
+    åƒ•ã®é€²ã‚“ã é“
+    ç§ã®é¸æŠž
 
 
-    CˆÄ
-    EƒCƒ“ƒtƒ‰ƒGƒ“ƒWƒjƒA‚É‚È‚é‚×‚«‚R‚Â‚Ì——R
-    EWEBƒGƒ“ƒWƒjƒA‚Æ‚È‚Á‚½‚T‚Â‚ÌƒƒP
-    E‘‡E‚ð‘I‚ñ‚Å‚æ‚©‚Á‚½‚S‚Â‚Ì‚±‚Æ
+    Cæ¡ˆ
+    ãƒ»ã‚¤ãƒ³ãƒ•ãƒ©ã‚¨ãƒ³ã‚¸ãƒ‹ã‚¢ã«ãªã‚‹ã¹ãï¼“ã¤ã®ç†ç”±
+    ãƒ»WEBã‚¨ãƒ³ã‚¸ãƒ‹ã‚¢ã¨ãªã£ãŸï¼•ã¤ã®ãƒ¯ã‚±
+    ãƒ»ç·åˆè·ã‚’é¸ã‚“ã§ã‚ˆã‹ã£ãŸï¼”ã¤ã®ã“ã¨
 
