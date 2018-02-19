@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="css/stylesheet.css">
     <title>S2 RECRUIT 2019</title>
 </head>
+<!--<script src="js/phone.js"></script>-->
 <body>
     <header class="menu-wrapper header">
       <div class="menu-header browser">
@@ -21,18 +22,34 @@
             </div>    
           </div>
         </div>
-<div class="phone">
-  <a href="/" class="logo">S2</a>
-  <input class="menu-btn" type="checkbox" id="menu-btn" />
-  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-  <ul class="phone-menu">
-    <li><a href="#">MESSAGE</a></li>
-    <li><a href="#">JOB</a></li>
-      <li><a href="#">WORKPLACE</a></li>
-    <li><a href="#">FLOW</a></li>
-    <li><a href="#">Entry</a></li>
-  </ul>
-    </div>
+<!--        
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+  -->
+<div class="dropdown phone">
+     <a href="/" class="logo">S2</a> 
+     <!-- <input class="menu-btn" type="checkbox" id="menu-btn" />
+         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+     -->
+<button onclick="myFunction()" class="dropbtn"> MENU</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">MESSAGE</a>
+    <a href="#about">JOB</a>
+    <a href="#contact">WORKPLACE</a>
+    <a href="#contact">FLOW</a>
+    <a href="#contact">ENTRY</a>
+  </div>
+</div>
+   
+     
+
+
 </header>
     
     <section class="section-wrapper">
@@ -176,7 +193,31 @@
                 <a href="#wantedly" class="button-wantedly"><span>Wantedlyへエントリー</span></a>
             </div>
         </div>
-    </section>        
+    </section>    
+    
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>        
+                
     </body>
 </html>
 
