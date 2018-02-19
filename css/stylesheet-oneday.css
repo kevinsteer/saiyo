@@ -1,7 +1,11 @@
-.oneday-wrapper {
-    background: url(../image/8G4A0836.jpg) no-repeat center center;
+.oneday {
+    height: 200vh;
+     background: url(../image/8G4A0836.jpg) no-repeat center center;
     background-size: cover;
-    height: 2000px;
+}
+
+#oneday-wrapper {
+    height: inherit;
 }
 
 .return-button {
@@ -22,10 +26,56 @@
 }
 
 .oneday-line-wrapper {
-    height: 100%;
+    height: inherit;
    float: right;
+    margin-right: 14%;
 }
 
 .oneday-title {
     position: absolute;
+}
+
+.oneday-line {
+    display: inline-block;
+    height: 100%;
+    position: relative;
+    border-left: 3px solid;
+    border-color: rgba(0,0,0,0.5);
+}
+
+.dot-block {
+    width: 60px;
+    display: block;
+    text-align: left;
+    margin: 200% 0;
+}
+
+.line-dot-span{
+    text-align: center;
+}
+
+.line-dot {
+    background: black;
+    height: 25px;
+    width: 25px;
+    border-radius: 90px;
+    margin-left: 8px;
+}
+
+.day-content {
+    position: absolute;
+}
+
+.ten {
+    float: right;
+    width: 600px;
+    right: 45%;
+    top: 250px;
+    height: auto;
+}
+
+.oneday-line p{
+    text-align: right;
+    margin: 0;
+    display: inline-block;
 }
