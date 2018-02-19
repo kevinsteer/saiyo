@@ -553,6 +553,7 @@ div.phone {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     align-content: center;
+    transition: all .2s ease-out;
 }
 
 .dropdown-content a {
@@ -562,7 +563,7 @@ div.phone {
     display: block;
     border-top:1px solid #ccc;
     border-bottom:1px solid #ccc;
-
+    transition: all .5s ease-out;
 }    
  
 .dropdown a:hover {background-color: #ddd}
