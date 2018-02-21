@@ -166,7 +166,7 @@ a {
 .SwayL1 {
     position: absolute;
     background: url(../image/balloonbl.svg) no-repeat center center;
-    top: 47%;
+    top: 41%;
     left: 13%;
     /*--- value 35px --*/
     width: 8%;
@@ -268,7 +268,7 @@ a {
     font-size: 13px
 }
 
-/* >>>>>>FIX 白線がよくわからない start 20180213hayashi */
+/* PM Message */
 #PM {
     margin: 75px 0px;
 }
@@ -306,3 +306,93 @@ a {
 		margin:0; padding:0;
 		}
 		/* 白線がよくわからない end 20180213hayashi */
+
+/*---- Job Types ---*/
+
+#jobs {
+    width: 100%;
+    margin: 50px 0;
+}
+
+.jobs-wrapper {
+    margin: 0 auto;
+    display: block;
+}
+
+.jobs-ctr {
+    margin: 30px auto;
+    width: 800px;
+    height: 250px;
+    border: 2px solid;
+}
+
+
+/*----- Workplace Culture --*/
+
+#workplace {
+    width: 100%;
+    margin: 50px 0;
+}
+
+.workplace-wrapper {
+    height: 550px;
+    background: url(../image/8G4A0892.jpg) no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.workplace-title-wrapper {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row-reverse;
+    position: relative;
+    margin: auto;
+    height: 550px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.workplace-title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    width: 400px;
+    height: 200px;
+    font-size: 45px;
+    line-height: 1.2em;
+    font-weight: 600;
+    margin: 3px;
+    border: 3px solid;
+    border-color: rgba(255,255,255,0);
+    transition: 0.3s 0s ease;
+    transition-property: border-color;
+}
+
+.btn-workplace {
+    width: 150px;
+    height: 40px;
+    margin-left: 8%;
+    margin-right: 10%;
+    border: 2px solid white;
+
+    transition: 0.3s 0s ease;
+    transition-property: background;
+}
+
+.btn-workplace:hover {
+    background: white;
+}
+
+.btn-workplace:hover ~ .workplace-title{
+    border-color: rgba(255,255,255,1);
+}
+
+.btn-workplace a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-indent: -9999px;
+}
