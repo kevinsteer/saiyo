@@ -307,7 +307,8 @@ a {
 		flex-wrap:wrap-reverse;
 		width:100%;
 		list-style-type:none;
-		margin:0; padding:0;
+		margin:0; 
+        padding:0;
 		}
 
 div.phone {
@@ -437,7 +438,7 @@ iPad 3
     position: absolute;
     background: url(../image/balloonrd.svg) no-repeat;
     left: 44%;
-    top: 7% !important;
+    top: 9.5% !important;
     width: 5%;
     height: 5%;
     z-index: -1;
@@ -588,7 +589,7 @@ div.phone {
     position: absolute;
     background: url(../image/balloonrd.svg) no-repeat;
     left: 44%;
-    top: 7% !important;
+    top: 8.5% !important;
     width: 5%;
     height: 5%;
     z-index: -1;
@@ -632,9 +633,10 @@ div.phone {
   background-color: #fff;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
   position: fixed;
+      
   width: 100%;
   z-index: 3;
-  line-height: 500%;  
+  line-height: 500%; 
 }
 
 .header ul {
@@ -645,7 +647,9 @@ div.phone {
   background-color: #fff;
 }
 
-
+    #myDropdown {
+        margin-top: 20px;
+    }
 
 .header .logo {
   display: block;
@@ -660,7 +664,7 @@ div.phone {
   max-height: 9;
   transition: max-height .2s ease-out;
   text-align: center;
-  font-size: 800%
+  font-size: 00%
     }
 .header .menu-icon {
   cursor: pointer;
@@ -729,7 +733,22 @@ div.phone {
   display: block;
 }     
     
+.newsheader {
+    position: relative;
+    margin: 1% 0 0;
+    width: 100%;
+    border-bottom: 1px solid;
+    border-bottom-color: black;
+}
 
+.newsheader-font {
+    margin: 0 auto 0 20px;
+    font-weight: 700;
+    font-size: 2em;
+}
+    
+    
+    
 .newsreel {
     width: 100%;
     display: block;
@@ -755,8 +774,14 @@ div.phone {
     font-size: 0.5em;    
     }
 .newsdate { 
-    font-size: 0.5em
+    font-size: 0.4em
     }
+#PM {
+    margin: 75px 0px;
+    padding-top: 160px;
+}
+    
+    
 }
 
 
