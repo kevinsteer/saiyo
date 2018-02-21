@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>  
+<head>
+<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">    
 <link rel="stylesheet" href="css/stylesheet.css">
     <title>S2 RECRUIT 2019</title>
 </head>
 <body>
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<script>AOS.init();</script>
     <header class="menu-wrapper">
       <div class="menu-header">
         <div class="menu-inner">
@@ -112,43 +115,41 @@
     </section>
     <section id="jobs">
         <div class="jobs-wrapper">
-            <div class="jobs-engineer jobs-center">
-                <h2 class="jobs-header jobs-left"> Server Engineer</h2>
-                <p class="jobs-para jobs-left">HAHAHAHAHAHAHADDDDDDDDDDDDDDD
-    DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD</p>
-                <button class="jobs-button jobs-right jobs-hover-white">More &raquo;</button>
+            <div class="jobs-eng jobs-ctr">
+                <h2 class="jobs-header jobs-left">SERVER ENGINEER</h2>
+                <p class="jobs-ctn jobs-left"></p>
+                <div class="btn">
+                    <a href="/">more</a>
+                </div>
             </div>
-            <div class="jobs-web jobs-center">
-                <h2 class="jobs-header  jobs-left"> Web Application Engineer</h2>
-                <p class="jobs-para jobs-left">HAHAHAHAHAHAHA</p>
-                <!--- change button class -->
-                <button class="jobs-button jobs-right jobs-hover-white">More &raquo;</button>
+            <div class="jobs-web jobs-ctr">
+                <h2 class="jobs-header  jobs-left">WEB ENGINEER</h2>
+                <p class="jobs-ctn jobs-left">HAHAHAHAHAHAHA</p>
+                <div class="btn">
+                    <a href="/">more</a>
+                </div>
             </div>
-            <div class="jobs-other jobs-center">
-                <h2 class="jobs-header  jobs-left"> Other Jobs</h2>  
-                <p class="jobs-para jobs-left">HAHAHAHAHAHAHA</p>
-                <!--- change button class -->
-                <button class="jobs-button jobs-right jobs-hover-white">More &raquo;</button>  
+            <div class="jobs-oth jobs-ctr">
+                <h2 class="jobs-header  jobs-left">Other Jobs</h2>  
+                <p class="jobs-ctn jobs-left">HAHAHAHAHAHAHA</p>
+                <div class="btn">
+                    <a href="/">more</a>
+                </div>  
             </div>    
         </div>
     </section>
     <section id="workplace">
-        <div class="workplace-wrapper">
-            <div class="workplace-web workplace-center">
-                <div class="workplace-wrapper2">
-                    <h2 class="workplace-header workplace-center workplace-left">
-                        <span>
-                            <span class="workplace-left"> WORKPLACE <br/>
+        <div class="workplace-wrapper" id="triggerwork">
+            <div class="workplace-title-wrapper">
+                <div class="btn-workplace" data-aos="fade-left" data-aos-anchor="#triggerwork" data-aos-anchor-placement="top-center">
+                    <a href="../jobtype.html">more</a>
+                </div>
+                <div class="workplace-title" data-aos="fade-right" data-aos-anchor="#triggerwork" data-aos-anchor-placement="top-center">
+                    <span class="workplace-left"> WORKPLACE <br/>
                             +<br/>
                         CULTURE</span> 
-                            <span class="workplace-left">
-                                <div class="btn-workplace">
-                                    <a href="/">more</a>
-                                </div>
-                            </span>
-                        </span>
-                    </h2>
                 </div>
+                
             </div>
         </div>
     </section>    
@@ -166,6 +167,3 @@
     </section>        
     </body>
 </html>
-
-
-		
