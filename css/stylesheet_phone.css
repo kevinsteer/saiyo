@@ -205,7 +205,7 @@ a {
 
 .newsheader-font {
     margin: 0 auto 0 20px;
-    font-weight: 600;
+    font-weight: 700;
 }
 .news {
     display: block;
@@ -238,9 +238,8 @@ a {
     display: flex;
     align-items: center;
     margin: 0;
-    font-size: .9em;
+    font-size: 0.9em;
     font-weight: 200;
-    
 }
 
 .newsitem-meta {
@@ -730,6 +729,34 @@ div.phone {
   display: block;
 }     
     
+
+.newsreel {
+    width: 100%;
+    display: block;
+    line-height: 300%;
+}
+
+.news-item a {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+
+    font-size: 3.9em;
+    font-weight: 200;
+    line-height: 400%;
+}  
+.news-item {
+    height: 80px;
+    }
+.newsitem-text {
+    font-size: 0.5em;
+    }
+    .newstag {
+    font-size: 0.5em;    
+    }
+.newsdate { 
+    font-size: 0.5em
+    }
 }
 
 
