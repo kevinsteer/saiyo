@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+<head>  
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">    
-<link rel="stylesheet" href="css/stylesheet.css">
+<link rel="stylesheet" href="css/stylesheet_phone.css">
+<link rel="stylesheet" href="hamburgers.css">   
     <title>S2 RECRUIT 2019</title>
+    
+    
+    
+    
+    
+    
 </head>
+<!--<script src="js/phone.js"></script>-->
 <body>
-<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-<script>AOS.init();</script>
-    <header class="menu-wrapper">
-      <div class="menu-header">
+    <header class="menu-wrapper header">
+      <div class="menu-header browser">
         <div class="menu-inner">
             <h1 class="logo"><a href="/">S2</a></h1>
           <nav class="Li">
@@ -24,7 +29,66 @@
             </div>    
           </div>
         </div>
-    </header>
+<!--        
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+  -->
+  <script>
+  /**
+   * forEach implementation for Objects/NodeLists/Arrays, automatic type loops and context options
+   *
+   * @private
+   * @author Todd Motto
+   * @link https://github.com/toddmotto/foreach
+   * @param {Array|Object|NodeList} collection - Collection of items to iterate, could be an Array, Object or NodeList
+   * @callback requestCallback      callback   - Callback function for each iteration.
+   * @param {Array|Object|NodeList} scope=null - Object/NodeList/Array that forEach is iterating over, to use as the this value when executing callback.
+   * @returns {}
+   */
+    var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.call(t))for(var c in t)Object.prototype.hasOwnProperty.call(t,c)&&o.call(r,t[c],c,t);else for(var e=0,l=t.length;l>e;e++)o.call(r,t[e],e,t)};
+    var hamburgers = document.querySelectorAll(".hamburger");
+    if (hamburgers.length > 0) {
+      forEach(hamburgers, function(hamburger) {
+        hamburger.addEventListener("click", function() {
+          this.classList.toggle("is-active");
+        }, false);
+      });
+    }
+  </script> 
+  
+      
+<div class="dropdown phone">
+     <a href="/" class="logo">S2</a> 
+     <!-- <input class="menu-btn" type="checkbox" id="menu-btn" />
+         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+     -->
+<div class="burger-button">     
+  <button onclick="myFunction()" class="dropbtn hamburger hamburger--squeeze" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>    
+</div> 
+  <div id="myDropdown" class="dropdown-content">
+    <a id="drop1" href="#home">MESSAGE</a>
+    <a id="drop2" href="#about">JOB</a>
+    <a id="drop3" href="#contact">WORKPLACE</a>
+    <a id="drop4" href="#contact">FLOW</a>
+    <a id="drop5" href="#contact">ENTRY</a>
+  </div>
+</div>
+   
+     
+
+
+</header>
+    
     <section class="section-wrapper">
     <section id="top">
         <div class="inner">
@@ -115,41 +179,43 @@
     </section>
     <section id="jobs">
         <div class="jobs-wrapper">
-            <div class="jobs-eng jobs-ctr">
-                <h2 class="jobs-header jobs-left">SERVER ENGINEER</h2>
-                <p class="jobs-ctn jobs-left"></p>
-                <div class="btn">
-                    <a href="/">more</a>
-                </div>
+            <div class="jobs-engineer jobs-center">
+                <h2 class="jobs-header jobs-left"> Server Engineer</h2>
+                <p class="jobs-para jobs-left">HAHAHAHAHAHAHADDDDDDDDDDDDDDD
+    DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD</p>
+                <button class="jobs-button jobs-right jobs-hover-white">More &raquo;</button>
             </div>
-            <div class="jobs-web jobs-ctr">
-                <h2 class="jobs-header  jobs-left">WEB ENGINEER</h2>
-                <p class="jobs-ctn jobs-left">HAHAHAHAHAHAHA</p>
-                <div class="btn">
-                    <a href="/">more</a>
-                </div>
+            <div class="jobs-web jobs-center">
+                <h2 class="jobs-header  jobs-left"> Web Application Engineer</h2>
+                <p class="jobs-para jobs-left">HAHAHAHAHAHAHA</p>
+                <!--- change button class -->
+                <button class="jobs-button jobs-right jobs-hover-white">More &raquo;</button>
             </div>
-            <div class="jobs-oth jobs-ctr">
-                <h2 class="jobs-header  jobs-left">Other Jobs</h2>  
-                <p class="jobs-ctn jobs-left">HAHAHAHAHAHAHA</p>
-                <div class="btn">
-                    <a href="/">more</a>
-                </div>  
+            <div class="jobs-other jobs-center">
+                <h2 class="jobs-header  jobs-left"> Other Jobs</h2>  
+                <p class="jobs-para jobs-left">HAHAHAHAHAHAHA</p>
+                <!--- change button class -->
+                <button class="jobs-button jobs-right jobs-hover-white">More &raquo;</button>  
             </div>    
         </div>
     </section>
     <section id="workplace">
-        <div class="workplace-wrapper" id="triggerwork">
-            <div class="workplace-title-wrapper">
-                <div class="btn-workplace" data-aos="fade-left" data-aos-anchor="#triggerwork" data-aos-anchor-placement="top-center">
-                    <a href="../jobtype.html">more</a>
-                </div>
-                <div class="workplace-title" data-aos="fade-right" data-aos-anchor="#triggerwork" data-aos-anchor-placement="top-center">
-                    <span class="workplace-left"> WORKPLACE <br/>
+        <div class="workplace-wrapper">
+            <div class="workplace-web workplace-center">
+                <div class="workplace-wrapper2">
+                    <h2 class="workplace-header workplace-center workplace-left">
+                        <span>
+                            <span class="workplace-left"> WORKPLACE <br/>
                             +<br/>
                         CULTURE</span> 
+                            <span class="workplace-left">
+                                <div class="btn-workplace">
+                                    <a href="/">more</a>
+                                </div>
+                            </span>
+                        </span>
+                    </h2>
                 </div>
-                
             </div>
         </div>
     </section>    
@@ -164,6 +230,12 @@
                 <a href="#wantedly" class="button-wantedly"><span>Wantedlyへエントリー</span></a>
             </div>
         </div>
-    </section>        
+    </section>    
+
+                 
+                
     </body>
 </html>
+
+
+		
