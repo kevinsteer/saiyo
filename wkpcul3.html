@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head> 
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">    
+<link rel="stylesheet" href="css/stylesheet.css">
+          <style type="text/css">
+  <!--
+             
+html {
+        height:100%;
+        width:100%;
+        display: inline-block;
+          }
+body {
+        width:100%;
+        height:100%;
+        display: inline-block;
+     }
+
+#main-visual{
+        width:100%;
+        height:100%;
+        display: inline-block;
+        box-sizing: border-box;
+        background-color: darkgray;
+        position: relative
+        overflow: hidden ;
+             }
+#main-visual img {
+        position: absolute;
+        width:100%;
+        height:100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;   
+              }
+#main-visual h1{
+        color: rgba(255, 255, 255, 0.6);
+        font-family:serif;
+        font-size: 500%;
+        position: absolute;
+        font-weight: bold;
+        top: 40%;
+        left: 35%;
+              }
+.gallery1{
+        width: 100%;
+        height:100%;
+        padding-top:5%;
+        padding-bottom:5%;
+        display: inline-block;
+        box-sizing: border-box;
+        background-color: white;
+              }
+              
+.gallery1 img{
+        width: 50%;
+        height:100%;
+        float: left;  
+        margin-right:10%;
+    
+                } 
+              
+.gallery1 h1{      
+        font-family: serif;
+        font-weight: bold;
+        font-size: 300%;
+              }
+.gallery1 p {
+        font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+        font-size:120%;
+        margin-top: 10%;
+            }
+              
+.gallery2 {
+        width: 100%;
+        height:100%;
+        padding-top:5%;
+        padding-bottom:5%;
+        display: inline-block;
+        box-sizing: border-box;
+        background-color: white;
+              }
+              
+.gallery2 img{
+        width: 50%;
+        height:100%;
+        float: right;  
+        
+    
+                } 
+              
+.gallery2 h1{      
+        font-family: serif;
+        font-weight: bold;
+        font-size: 300%;
+        margin-left:10%;
+              }
+.gallery2 p {
+        font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+        font-size:120%;
+        margin-top: 10%;
+        margin-left:10%;
+            }
+              
+.gallery3 {
+        width: 100%;
+        height:100%;
+        padding-top:5%;
+        padding-bottom:5%;
+        display: inline-block;
+        box-sizing: border-box;
+        background-color: white;
+              }
+              
+.gallery3 img{
+        width: 50%;
+        height:100%;
+        float: left;  
+        margin-right:10%;
+    
+                } 
+              
+.gallery3 h1{      
+        font-family: serif;
+        font-weight: bold;
+        font-size: 300%;
+        
+              }
+.gallery3 p {
+        font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+        font-size:120%;
+        margin-top: 10%;
+        margin-left:10%;
+            }
+              
+.gallery4 {
+        width: 100%;
+        height:100%;
+        padding-top:5%;
+        padding-bottom:5%;
+        display: inline-block;
+        box-sizing: border-box;
+        background-color: white;
+              }
+              
+.gallery4 img{
+        width: 50%;
+        height:100%;
+        float: right;  
+        
+    
+                } 
+              
+.gallery4 h1{      
+        font-family: serif;
+        font-weight: bold;
+        font-size: 300%;
+        margin-left:10%;
+              }
+.gallery4 p {
+        font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+        font-size:120%;
+        margin-top: 10%;
+        margin-left:10%;
+            }  
+.gallery5 {
+        width: 100%;
+        height:100%;
+        padding-top:5%;
+        padding-bottom:5%;
+        display: inline-block;
+        box-sizing: border-box;
+        background-color: white;
+              }
+              
+.gallery5 img{
+        width: 50%;
+        height:100%;
+        float: left;  
+        margin-right:10%;
+    
+                } 
+              
+.gallery5 h1{      
+        font-family: serif;
+        font-weight: bold;
+        font-size: 300%;
+        
+              }
+.gallery5 p {
+        font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+        font-size:120%;
+        margin-top: 10%;
+        margin-left:10%;
+            }
+#access {
+        width:100%;
+        height:60%;
+        display: inline-block;
+        box-sizing: border-box;
+        background-color: darkgray;   
+        position:relative;
+              }
+.ggmap iframe{
+        width:40%;
+        float:left;
+        position: absolute;
+        top:10%
+        
+        
+                  
+              }
+#access h1{
+        font-family:serif;
+        color: white;
+        float: right;
+        margin-right: 30%;
+        font-style: bold;
+        font-size: 300%;
+                  
+              }
+@media screen and ( max-width:415px )
+    {
+html {
+        height:80%;
+        width:100%;
+        display: inline-block;
+          }
+body {
+        width:100%;
+        height:80%;
+        display: inline-block;
+     }
+#main-visual{
+        width:100%;
+        height:80%;
+        display: inline-block;
+        box-sizing: border-box;
+        background-color: darkgray;
+        position: relative;
+             }
+#main-visual img {
+        position: absolute;
+        width:100%;
+        height:100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;   
+              }
+#main-visual h1{
+        color: rgba(255, 255, 255, 0.6);
+        font-family:serif;
+        font-size: 200%;
+        position: absolute;
+        font-weight: bold;
+        top: 40%;
+        left: 30%;
+              }
+.gallery1{
+        width: 100%;
+        height:100%;
+        padding-top:5%;
+        padding-bottom:5%;
+        display: inline;
+        box-sizing: border-box;
+        background-color: white;
+              }
+              
+.gallery1 img{
+        width: 100%;
+        height:100%;  
+        margin-right:10%;
+        display: block;
+                } 
+              
+.gallery1 h1{      
+        font-family:serif;
+        font-weight: bold;
+        font-size: 150%;
+        text-align: center
+              }
+.gallery1 p {
+        font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+        font-size:80%;
+        margin-top: 5%;
+        text-align: center
+            }
+.gallery2 {
+        width: 100%;
+        height:100%;
+        padding-top:5%;
+        padding-bottom:5%;
+        display:block;
+        box-sizing: border-box;
+        background-color: white;
+              }
+              
+.gallery2 img{
+        width: 100%;
+        height:100%;
+                } 
+              
+.gallery2 h1{      
+        font-family: serif;
+        font-weight: bold;
+        font-size: 150%;
+        text-align: center;
+              }
+.gallery2 p {
+        font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+        font-size:80%;
+        margin-top: 5%;
+        text-align: center;
+            }
+.gallery3 {
+        width: 100%;
+        height:100%;
+        padding-top:5%;
+        padding-bottom:5%;
+        display: block;
+        box-sizing: border-box;
+        background-color: white;
+              }
+              
+.gallery3 img{
+        width: 100%;
+        height:100%;
+                } 
+              
+.gallery3 h1{      
+        font-family: serif;
+        font-weight: bold;
+        font-size: 150%;
+        text-align: center;
+            }
+.gallery3 p {
+        font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+        font-size:80%;
+        margin-top: 5%;
+        text-align: center;
+            }
+.gallery4 {
+        width: 100%;
+        height:100%;
+        padding-top:5%;
+        padding-bottom:5%;
+        display: block;
+        box-sizing: border-box;
+        background-color: white;
+              }
+              
+.gallery4 img{
+        width: 100%;
+        height:100%;
+                } 
+              
+.gallery4 h1{      
+        font-family: serif;
+        font-weight: bold;
+        font-size: 150%;
+        text-align: center;
+            }
+.gallery4 p {
+        font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+        font-size:80%;
+        margin-top: 5%;
+        text-align: center;
+        }
+.gallery5 {
+        width: 100%;
+        height:100%;
+        padding-top:5%;
+        padding-bottom:5%;
+        display: block;
+        box-sizing: border-box;
+        background-color: white;
+              }
+              
+.gallery5 img{
+        width: 100%;
+        height:100%;
+                } 
+              
+.gallery5 h1{      
+        font-family: serif;
+        font-weight: bold;
+        font-size: 150%;
+        text-align: center;
+            }
+.gallery5 p {
+        font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+        font-size:80%;
+        margin-top: 5%;
+        text-align: center;
+            }
+#access {
+        width:100%;
+        height:100%;
+        display: inline-block;
+        box-sizing: border-box;
+        background-color: darkgray;   
+        position:relative;
+              }
+.ggmap iframe{
+        width:100%;
+            }
+#access h1{
+        font-family:serif;
+        color: white;
+        text-align: center;
+        font-style: bold;
+        font-size: 200%;
+        
+        }
+            
+        }
+              
+  -->
+  </style>
+    <title>S2 RECRUIT 2019</title>
+</head>
+<body>
+  
+    <section id="main-visual">
+        <img alt="topimage" src="image/topsample.jpg">
+        <h1>WorkPlace  Culture</h1>
+    </section>
+    <section id="gallery">
+        <div class="gallery1">
+            <img alt="galeery1-img" src="image/office1.jpg">
+            <h1>Free Work Space</h1>
+            <p>広々としたオフィスの中は全体がフリースペース。<br>快適に働きやすい環境があります</p>
+        </div>
+        <div class="gallery2">
+            <img alt="galeery2-img" src="image/office2.jpg">
+            <h1>Meeting Room</h1>
+            <p>オフィスの一角にある会議室<br>開放的な空間で様々なアイデアが飛び交います</p>
+        </div>
+        <div class="gallery3">
+            <img alt="galeery3-img" src="image/office3.jpg">
+            <h1>Sophisticated Office</h1>
+            <p>機能性を兼ね備えた洗練されたオフィス<br>モデルルームのようなオフィスの椅子は座り心地も抜群</p>
+        </div>
+         <div class="gallery4">
+            <img alt="galeery4-img" src="image/office4.jpg">
+            <h1>Free Drink</h1>
+            <p>ウォーターサーバーやドリップコーヒー完備<br>好きなドリンクを飲みながら作業OKです<br>お菓子もありますよ</p>
+        </div>       
+        <div class="gallery5">
+            <img alt="galeery5-img" src="image/office5.jpg">
+            <h1>Personal Space</h1>
+            <p>個室も完備<br>スカイプ利用時や集中して作業したい時などは個室も利用できます。</p>
+        </div>
+     </section>
+     <section id="access">
+           <h1>Access</h1>
+        <div class="ggmap"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3069.033805222095!2d140.11847732813288!3d39.71642298509824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8fc2eb8690c235%3A0xaa82cbeefa77a70a!2z44CSMDEwLTAwMDEg56eL55Sw55yM56eL55Sw5biC5Lit6YCa77yT5LiB55uu77yT4oiS77yR77yQIOeni-eUsOOCueOCq-OCpOODl-ODqeOCtg!5e0!3m2!1sja!2sjp!4v1519024072349" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+         
+         
+         
+    
+    </section>
+  
