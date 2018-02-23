@@ -442,25 +442,15 @@ a {
     width: 100%;
     text-indent: -9999px;
 }
-<<<<<<< HEAD
 
 /*----- access --*/
 #access {
         width:100%;
-        height:60%;
+        height:900px;
         display: inline-block;
         box-sizing: border-box;
         background-color: darkgray;   
         position:relative;
-              }
-.ggmap iframe{
-        width:40%;
-        float:left;
-        position: absolute;
-        top:10%
-        
-        
-                  
               }
 #access h1{
         font-family:serif;
@@ -469,10 +459,15 @@ a {
         margin-right: 30%;
         font-style: bold;
         font-size: 300%;
-                  
-              }
+             }
 #map{
         width:100%;
-        height:100%}
+        height:60%
+        position:relative;bottom:10%;
+          }
+
+
+
 =======
+<<<<<<< HEAD
 >>>>>>> 6e23ebd3e74fd09a71ac5b6ecbdb8c7752189d21
