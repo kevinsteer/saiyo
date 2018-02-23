@@ -48,18 +48,19 @@
    
     
             
- <button onclick="myFunction()" class="dropbtn hamburger hamburger--squeeze" type="button">
+ <button onclick="myFunction()" id="target_drp" class="dropbtn hamburger hamburger--squeeze" type="button">
   <div  class="hamburger-box">
     <span  class="hamburger-inner"></span>
   </div>
 </button>
 
+
   <div id="myDropdown" class="dropdown-content">
-    <a id="drop1" href="#home">MESSAGE</a>
-    <a id="drop2" href="#about">JOB</a>
-    <a id="drop3" href="#contact">WORKPLACE</a>
-    <a id="drop4" href="#contact">FLOW</a>
-    <a id="drop5" href="#contact">ENTRY</a>
+    <a id="drop1" href="#PM">MESSAGE</a>
+    <a id="drop2" href="#jobs" type="button">JOB</a>
+    <a id="drop3" href="#workplace">WORKPLACE</a>
+    <a id="drop4" href="#flow">FLOW</a>
+    <a id="drop5" href="#entry">ENTRY</a>
   </div>
 </div>
    
@@ -128,8 +129,8 @@
             </ul>
             </div>    
              <!---- Scroll ---->
-            <div class="scroll" id="scroll">
-              <p class="scroll-text">Scroll</p>    
+            <div class="scroll browser" id="scroll">
+              <p class="scroll-text ">Scroll</p>    
               <img src="image/#" alt class="scroll-mouse">
             </div>
         </div>
@@ -258,6 +259,10 @@ window.onclick = function(event) {
       });
     }
 
+    
+$( "#drop1" ).click(function() {
+  $( ".dropbtn" ).click();
+});    
 
 </script>        
 
