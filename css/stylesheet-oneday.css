@@ -46,6 +46,7 @@ body {
     background: #60defd;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
     text-indent: -9999px;
+    z-index: 1;
 }
 
 .return-button-in {

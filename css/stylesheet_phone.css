@@ -526,7 +526,55 @@ div.phone {
     padding-top: 160px;
 }
     
+/*JOBS page 携帯対策*/
+       
+    .schedule-header {
+        font-size: 4em !important;
+    }    
+    .job-header {
+        padding-top: 15%;
+        padding-right: 55px;
+        font-size: 3em !important;
+    }
+    .schedule-content {
+        padding-top: 13%;
+    }
+    .content-day {
+        font-size: 2.5em !important;
+        width: 570px !important;
+        height: 240px !important;
+        left: -670px !important;
+    }
     
+    .content-title {
+    width: 40px !important;
+    font-size: 30px !important;
+    }
+    .wrapper-content {
+    margin-right: 250px !important;
+    }
+    /*.line
+    {   position: absolute;
+        left:730px !important;}*/
+    .dot::after { 
+        bottom: 110px !important;
+    }
+    .time {
+        padding-top: 37.5px !important;
+        font-size: 3em !important;
+    }
+    .oneday-title {
+    border-bottom: none !important;
+    }
+    .oneday-title h1 span{
+        border-bottom: 12px solid #2cb4d6;
+    }
+    
+    .jobtype {
+     background: url(../image/takadamobile2.jpg)no-repeat center fixed;
+    background-size: cover;
+    color: #383838;
+}
 }
 
 
