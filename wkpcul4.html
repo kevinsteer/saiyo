@@ -223,6 +223,10 @@ body {
         font-size: 300%;
                   
               }
+#map{
+        width:100%;
+        height:100%}
+            }
 @media screen and ( max-width:415px )
     {
 html {
@@ -425,7 +429,7 @@ body {
   </style>
     <title>S2 RECRUIT 2019</title>
 </head>
-<body>
+<body onload="initialize();">
   
     <section id="main-visual">
         <img  alt="topimage" src="image/topsample.jpg">
@@ -460,7 +464,42 @@ body {
      </section>
      <section id="access">
            <h1>Access</h1>
-        <div class="ggmap"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3069.033805222095!2d140.11847732813288!3d39.71642298509824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8fc2eb8690c235%3A0xaa82cbeefa77a70a!2z44CSMDEwLTAwMDEg56eL55Sw55yM56eL55Sw5biC5Lit6YCa77yT5LiB55uu77yT4oiS77yR77yQIOeni-eUsOOCueOCq-OCpOODl-ODqeOCtg!5e0!3m2!1sja!2sjp!4v1519024072349" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
-         
+         <div id="map">
+         </div>
+         <script type="text/javascript">
+	var loadedGoogleMap = function(){
+		function initialize() {
+			var myLatlng = {lat: 39.7161102, lng: 140.1204176}; //マーカーの位置（＝所在地）
+            
+            var styles = [
+				{
+					stylers: [
+						{ hue: "#337FF0" },
+						{ lightness: 0 },
+						{ saturation: -100 },
+						{ gamma: 1 },
+						{ invert_lightness: false},
+						{ visibility: "simplified"}
+					]
+				}
+			];
+			var mapOptions = {
+				center: myLatlng,
+				zoom: 17,
+                styles: styles, 
+			};
+			var map = new google.maps.Map(document.getElementById('map'),mapOptions);
+        var marker = new google.maps.Marker({
+				position: myLatlng,
+				map: map,
+				title: '株式会社エスツー',
+                icon:'image/mapicon.png'
+					});
+            
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+	};
+</script>
+<script async defer src="//maps.googleapis.com/maps/api/js?key=AIzaSyBr4lqQ_z1DmjsgX7zqfwNZFT5Mkxrdrh8
+&callback=loadedGoogleMap"></script>
      </section>
-  
