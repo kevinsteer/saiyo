@@ -1,5 +1,5 @@
 body {
-     background: url(../image/testbg.jpg) no-repeat center fixed;
+     background: url(../image/takadabg.jpg)no-repeat center fixed;
     background-size: cover;
     color: #383838;
 }
@@ -8,7 +8,7 @@ body {
     z-index: -1;
     width: 100%;
     position: absolute;
-    text-shadow: 0px 0px 10px rgba(0,0,0,0.09);
+    text-shadow: 0px 0px 10px rgba(0,0,0,.3);
 }
 
 .oneday-title {
@@ -26,7 +26,7 @@ body {
 }
 
 .title-box h2 {
-    color: white;
+    color: #60defd;
     margin: 0 auto;
     width: 500px;
     text-indent: 5px;
@@ -34,6 +34,7 @@ body {
     font-size: 15px;
     padding-left: 5px;
     font-family: 'Noto Sans Japanese';
+    text-shadow: none;
 }
 
 .return-button {
@@ -42,8 +43,8 @@ body {
     position: fixed;
     height: 90px;
     width: 90px;
-    background: white;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.08);
+    background: #60defd;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
     text-indent: -9999px;
 }
 
