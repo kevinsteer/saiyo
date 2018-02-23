@@ -4,27 +4,67 @@
 <link href="../js/dist/aos.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">    
 <link rel="stylesheet" href="css/stylesheet.css">
+<link rel="stylesheet" href="css/stylesheet_phone.css">
+<link rel="stylesheet" href="css/hamburgers.css">   
     <title>S2 RECRUIT 2019</title>
 </head>
 <body>
 <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 <script>AOS.init();</script>
-    <header class="menu-wrapper">
-      <div class="menu-header">
+    <header class="menu-wrapper header">
+      <div class="menu-header browser">
         <div class="menu-inner">
-            <h1 class="logo"><a href="">S2</a></h1>
+            <h1 class="logo"><a href="/">S2</a></h1>
           <nav class="Li">
-            <li class="Li-GlobalMenu"><a href="#PM"><span>MESSAGE</span></a></li>
-            <li class="Li-GlobalMenu"><a href="#jobs"><span>JOB</span></a></li>
-            <li class="Li-GlobalMenu"><a href="#workplace"><span>WORKPLACE</span></a></li>
-            <li class="Li-GlobalMenu"><a href="#flow"><span>FLOW</span></a></li>  
+            <li class="Li-GlobalMenu"><a href="#"><span>MESSAGE</span></a></li>
+            <li class="Li-GlobalMenu"><a href="#"><span>JOB</span></a></li>
+            <li class="Li-GlobalMenu"><a href="#"><span>WORKPLACE</span></a></li>
+            <li class="Li-GlobalMenu"><a href="#"><span>FLOW</span></a></li>  
             </nav>
           <div class="menu-Ebutton">
               <a href="#entry" class="button-top"><span>ENTRY</span></a>
             </div>    
           </div>
         </div>
-    </header>
+<!--        
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+  -->
+<div class="dropdown phone">
+     <a href="/" class="logo">S2</a> 
+     <!-- <input class="menu-btn" type="checkbox" id="menu-btn" />
+         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+     -->
+
+   
+    
+            
+ <button onclick="myFunction()" id="target_drp" class="dropbtn hamburger hamburger--squeeze" type="button">
+  <div  class="hamburger-box">
+    <span  class="hamburger-inner"></span>
+  </div>
+</button>
+
+
+  <div id="myDropdown" class="dropdown-content">
+    <a id="drop1" href="#PM" onclick="document.getElementById('target_drp').click()">MESSAGE</a>
+    <a id="drop2" href="#jobs" onclick="document.getElementById('target_drp').click()">JOB</a>
+    <a id="drop3" href="#workplace" onclick="document.getElementById('target_drp').click()">WORKPLACE</a>
+    <a id="drop4" href="#flow" onclick="document.getElementById('target_drp').click()">FLOW</a>
+    <a id="drop5" href="#entry" onclick="document.getElementById('target_drp').click()">ENTRY</a>
+  </div>
+</div>
+   
+     
+
+
+</header>
     <section class="section-wrapper">
     <section id="top">
         <div class="inner">
@@ -163,8 +203,62 @@
                 <a href="#wantedly" class="button-wantedly"><span>Wantedlyへエントリー</span></a>
             </div>
         </div>
-    </section>        
-    </body>
+    </section>
+    
+
+    
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+
+
+
+
+ /**
+   * forEach implementation for Objects/NodeLists/Arrays, automatic type loops and context options
+   *
+   * @private
+   * @author Todd Motto
+   * @link https://github.com/toddmotto/foreach
+   * @param {Array|Object|NodeList} collection - Collection of items to iterate, could be an Array, Object or NodeList
+   * @callback requestCallback      callback   - Callback function for each iteration.
+   * @param {Array|Object|NodeList} scope=null - Object/NodeList/Array that forEach is iterating over, to use as the this value when executing callback.
+   * @returns {}
+   */
+    var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.call(t))for(var c in t)Object.prototype.hasOwnProperty.call(t,c)&&o.call(r,t[c],c,t);else for(var e=0,l=t.length;l>e;e++)o.call(r,t[e],e,t)};
+    var hamburgers = document.querySelectorAll(".hamburger");
+    if (hamburgers.length > 0) {
+      forEach(hamburgers, function(hamburger) {
+        hamburger.addEventListener("click", function() {
+          this.classList.toggle("is-active");
+        }, false);
+      });
+    }
+
+   
+  
+
+</script>                                
+</body>
 </html>
 
 
