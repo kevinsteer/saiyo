@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="css/stylesheet.css">
     <title>S2 RECRUIT 2019</title>
 </head>
-<body>
+<body onload="initialize();">
 <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 <script>AOS.init();</script>
     <header class="menu-wrapper">
@@ -118,22 +118,22 @@
             <div class="jobs-eng jobs-ctr">
                 <h2 class="jobs-header jobs-left">SERVER ENGINEER</h2>
                 <p class="jobs-ctn jobs-left"></p>
-                <div class="btn">
-                    <a href="/">more</a>
+                <div class="btn1">
+                    <a class="a1"href="/">more</a>
                 </div>
             </div>
             <div class="jobs-web jobs-ctr">
                 <h2 class="jobs-header  jobs-left">WEB ENGINEER</h2>
                 <p class="jobs-ctn jobs-left">HAHAHAHAHAHAHA</p>
-                <div class="btn">
-                    <a href="/">more</a>
+                <div class="btn2">
+                    <a class="a2"href="/">more</a>
                 </div>
             </div>
             <div class="jobs-oth jobs-ctr">
                 <h2 class="jobs-header  jobs-left">Other Jobs</h2>  
-                <p class="jobs-ctn jobs-left">HAHAHAHAHAHAHA</p>
-                <div class="btn">
-                    <a href="/">more</a>
+                <a href="../jobtype.html">more</a>
+                <div class="btn3">
+                    <a class="a3"href="/">more</a>
                 </div>  
             </div>    
         </div>
@@ -149,7 +149,7 @@
                             +<br/>
                         CULTURE</span> 
                 </div>
-                
+                ^^
             </div>
         </div>
     </section>    
@@ -164,6 +164,46 @@
                 <a href="#wantedly" class="button-wantedly"><span>Wantedlyへエントリー</span></a>
             </div>
         </div>
-    </section>        
+    </section>  
+    <section id="access">
+        <h1>Access</h1>
+         <div id="map"></div>
+         <script type="text/javascript">
+	var loadedGoogleMap = function(){
+		function initialize() {
+			var myLatlng = {lat: 39.7161102, lng: 140.1204176}; //マーカーの位置（＝所在地）
+            
+            var styles = [
+				{
+					stylers: [
+						{ hue: "#337FF0" },
+						{ lightness: 0 },
+						{ saturation: -100 },
+						{ gamma: 1 },
+						{ invert_lightness: false},
+						{ visibility: "simplified"}
+					]
+				}
+			];
+			var mapOptions = {
+				center: myLatlng,
+				zoom: 17,
+                styles: styles, 
+			};
+			var map = new google.maps.Map(document.getElementById('map'),mapOptions);
+        var marker = new google.maps.Marker({
+				position: myLatlng,
+				map: map,
+				title: '株式会社エスツー',
+                icon:'image/mapicon.png'
+					});
+            
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+	};
+</script>
+<script async defer src="//maps.googleapis.com/maps/api/js?key=AIzaSyBr4lqQ_z1DmjsgX7zqfwNZFT5Mkxrdrh8
+&callback=loadedGoogleMap"></script>
+    </section>
     </body>
 </html>
