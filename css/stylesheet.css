@@ -311,7 +311,8 @@ a {
 
 #jobs {
     width: 100%;
-    margin: 50px 0;
+    padding-top: 60px;
+    height: 100%;
 }
 
 .jobs-wrapper {
@@ -332,6 +333,7 @@ a {
 #workplace {
     width: 100%;
     margin: 50px 0;
+    padding: 50px 0;
 }
 
 .workplace-wrapper {
@@ -342,10 +344,13 @@ a {
 }
 
 .workplace-title-wrapper {
+    display: -webkit-flex;
     display: flex;
     text-align: center;
+    -webkit-justify-content: center;
     justify-content: center;
     align-items: center;
+    -webkit-flex-direction:row-reverse;
     flex-direction:row-reverse;
     position: relative;
     margin: auto;
@@ -354,9 +359,12 @@ a {
     background-color: rgba(0,0,0,0.1);
 }
 
-.workplace-title {
+.workplace-title-contents {
+    display: -webkit-flex;
     display: flex;
+    -webkit-justify-content: center;
     justify-content: center;
+    -webkit-flex-direction: column;
     flex-direction: column;
     color: white;
     width: 400px;
@@ -371,26 +379,25 @@ a {
     transition-property: border-color;
 }
 
-.btn-workplace {
+.btn-workplace-contents {
     width: 150px;
     height: 40px;
     margin-left: 8%;
     margin-right: 10%;
     border: 2px solid white;
-
     transition: 0.3s 0s ease;
     transition-property: background;
 }
 
-.btn-workplace:hover {
+.btn-workplace-contents:hover {
     background: white;
 }
 
-.btn-workplace:hover ~ .workplace-title{
+.btn-workplace-contents:hover ~ .workplace-title-contents{
     border-color: rgba(255,255,255,1);
 }
 
-.btn-workplace a {
+.btn-workplace-contents a {
     display: block;
     height: 100%;
     width: 100%;
