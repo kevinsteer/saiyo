@@ -314,6 +314,9 @@ a {
 div.phone {
     display: none;
 }
+span.phone {
+    display: none;
+}
 
 		/* 白線がよくわからない end 20180213hayashi */
 
@@ -352,9 +355,15 @@ responsive web design
 div.browser {
     display: none !important;
     }
+time.browser {
+    display: none !important;
+    }    
 div.phone {
     display: block;  
 }  
+span.phone {
+    display: block;
+}    
     .dropbtn {
         float: left;
         margin-left: 50%;
@@ -499,7 +508,9 @@ div.phone {
     display: block;
     line-height: 300%;
 }
-
+    br.browser {
+        display: none;
+    }
 .news-item a {
     display: flex;
     align-items: center;
@@ -527,54 +538,93 @@ div.phone {
 }
     
 /*JOBS page 携帯対策*/
-       
+    .title-box {
+        background-color: #2cb4d6;;
+    }   
     .schedule-header {
-        font-size: 4em !important;
+        font-size: 4.2em !important;
+        text-align: center !important;
     }    
     .job-header {
-        padding-top: 15%;
+        padding-top: 22px;
         padding-right: 55px;
-        font-size: 3em !important;
+        font-size: 2em !important;
+        color: #c9fffd !important;
     }
     .schedule-content {
-        padding-top: 13%;
+        padding-top: 2%;
     }
     .content-day {
-        font-size: 2.5em !important;
-        width: 570px !important;
-        height: 240px !important;
-        left: -670px !important;
+        top: 55px;
+        font-size: 2.4em !important;
+        width: 650px !important;
+        height: 230px !important;
+        left: -750px !important;
+        padding-top: 35px !important;
+        padding-left: 35px !important;
+        padding-right: 35px 
+            !important;
+        padding-bottom: 5px;
     }
-    
+ .return-button { 
+    display: block;
+    position: fixed;
+    height: 130px !important;
+    width: 130px !important;
+    background-color: 707070 !important;
+    box-shadow: 0px 0px 0px rgba(0,0,0,0.8);
+    text-indent: -1 !important;
+    z-index: 10 !important;
+}
     .content-title {
     width: 40px !important;
     font-size: 30px !important;
     }
     .wrapper-content {
-    margin-right: 250px !important;
+    margin-right: 0px !important;
+    float: right;    
     }
     /*.line
     {   position: absolute;
         left:730px !important;}*/
+   
     .dot::after { 
-        bottom: 110px !important;
-    }
+    display: none;    
+}
     .time {
-        padding-top: 37.5px !important;
-        font-size: 3em !important;
+        position: absolute;
+        top: 10px;
+        font-weight: 600;
+        font-size: 1em !important;
+        float: left !important;
+        text-align: left;
+        padding-left: 15px;
+        padding-bottom: 5px;
     }
     .oneday-title {
     border-bottom: none !important;
+    width: 800px !important;    
+     
     }
     .oneday-title h1 span{
         border-bottom: 12px solid #2cb4d6;
     }
-    
+div.title-box {
+    background: 2cb4d6 !important;
+    z-index: 6 !important;
+    padding-top: 10px !important;
+}    
+
     .jobtype {
      background: url(../image/takadamobile2.jpg)no-repeat center fixed;
     background-size: cover;
     color: #383838;
 }
+   .return-button-in {
+        font-size: 90px !important;
+       padding-left: 15px !important;
+       padding-top: 0px !important;
+    }    
 }
 
 
