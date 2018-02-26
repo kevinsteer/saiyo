@@ -311,7 +311,8 @@ a {
 
 #jobs {
     width: 100%;
-    margin: 50px 0;
+    padding-top: 60px;
+    height: 100%;
 }
 
 .jobs-wrapper {
@@ -325,13 +326,53 @@ a {
     height: 250px;
     border: 2px solid;
 }
+#jobs .btn1 {
+    width: 150px;
+    height: 40px;  
+    position:relative;top:40%;
+    position:relative;left:65%;
+    border: 2px solid black;
+}
 
+#jobs .btn2 {
+    width: 150px;
+    height: 40px;  
+    position:relative;top:27%;
+    position:relative;left:65%;
+    border: 2px solid black;
+}
 
+#jobs .btn3 {
+    width: 150px;
+    height: 40px;  
+    position:relative;top:38%;
+    position:relative;left:65%;
+    border: 2px solid black;
+}
+#jobs .a1{
+    font-size:15pt;
+    font-weight:bold;
+    position:relative;top:10%;
+    position:relative;left:30%;
+    }
+#jobs .a2{
+    font-size:15pt;
+    font-weight:bold;
+    position:relative;top:10%;
+    position:relative;left:30%;
+    }
+#jobs .a3{
+    font-size:15pt;
+    font-weight:bold;
+    position:relative;top:10%;
+    position:relative;left:30%;
+    }
 /*----- Workplace Culture --*/
 
 #workplace {
     width: 100%;
     margin: 50px 0;
+    padding: 50px 0;
 }
 
 .workplace-wrapper {
@@ -342,10 +383,13 @@ a {
 }
 
 .workplace-title-wrapper {
+    display: -webkit-flex;
     display: flex;
     text-align: center;
+    -webkit-justify-content: center;
     justify-content: center;
     align-items: center;
+    -webkit-flex-direction:row-reverse;
     flex-direction:row-reverse;
     position: relative;
     margin: auto;
@@ -354,9 +398,12 @@ a {
     background-color: rgba(0,0,0,0.1);
 }
 
-.workplace-title {
+.workplace-title-contents {
+    display: -webkit-flex;
     display: flex;
+    -webkit-justify-content: center;
     justify-content: center;
+    -webkit-flex-direction: column;
     flex-direction: column;
     color: white;
     width: 400px;
@@ -371,28 +418,56 @@ a {
     transition-property: border-color;
 }
 
-.btn-workplace {
+.btn-workplace-contents {
     width: 150px;
     height: 40px;
     margin-left: 8%;
     margin-right: 10%;
     border: 2px solid white;
-
     transition: 0.3s 0s ease;
     transition-property: background;
 }
 
-.btn-workplace:hover {
+.btn-workplace-contents:hover {
     background: white;
 }
 
-.btn-workplace:hover ~ .workplace-title{
+.btn-workplace-contents:hover ~ .workplace-title-contents{
     border-color: rgba(255,255,255,1);
 }
 
-.btn-workplace a {
+.btn-workplace-contents a {
     display: block;
     height: 100%;
     width: 100%;
     text-indent: -9999px;
 }
+
+/*----- access --*/
+#access {
+        width:100%;
+        height:900px;
+        display: inline-block;
+        box-sizing: border-box;
+        background-color: darkgray;   
+        position:relative;
+              }
+#access h1{
+        font-family:serif;
+        color: white;
+        float: right;
+        margin-right: 30%;
+        font-style: bold;
+        font-size: 300%;
+             }
+#map{
+        width:100%;
+        height:60%
+        position:relative;bottom:10%;
+          }
+
+
+
+=======
+<<<<<<< HEAD
+>>>>>>> 6e23ebd3e74fd09a71ac5b6ecbdb8c7752189d21
