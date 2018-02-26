@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head> 
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=0.5,user-scalable=yes,initial-scale=1.0" />
+
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">    
 <link rel="stylesheet" href="css/stylesheet.css">
     <style type="text/css">
@@ -226,9 +227,9 @@ body {
 #map{
         width:100%;
         height:100%}
-            }
-@media screen and ( max-width:415px )
-    {
+            
+@media screen and (max-width:815px){
+    
 html {
         height:80%;
         width:100%;
@@ -405,23 +406,33 @@ body {
             }
 #access {
         width:100%;
-        height:100%;
+        height:60%;
         display: inline-block;
         box-sizing: border-box;
         background-color: darkgray;   
         position:relative;
               }
 .ggmap iframe{
-        width:100%;
-            }
+        width:40%;
+        float:left;
+        position: absolute;
+        top:10%
+        
+        
+                  
+              }
 #access h1{
         font-family:serif;
         color: white;
-        text-align: center;
+        float: right;
+        margin-right: 30%;
         font-style: bold;
-        font-size: 200%;
-        
-        }
+        font-size: 300%;
+                  
+              }
+#map{
+        width:100%;
+        height:100%
             
         }
               
@@ -493,7 +504,7 @@ body {
 				position: myLatlng,
 				map: map,
 				title: '株式会社エスツー',
-                icon:'image/mapicon.png'
+                icon:'image/mapicons2.png'
 					});
             
 		}
