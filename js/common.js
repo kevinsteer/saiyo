@@ -4,7 +4,8 @@ var lastScrollTop = 0;
 var pm = $('#PM').offset().top;
 var jb = $('#jobs').offset().top;
 var wp = $('#workplace').offset().top;
-var fl = $('#flow').offset().top;    
+var fl = $('#flow').offset().top;
+var en = $('#entry').offset().top;
 var delta = 400;
 var delay = 600;
 var navbarHeight = $('header').outerHeight();
@@ -33,6 +34,8 @@ function hasScrolled() {
     } else if (st == wp){
         return;
     } else if (st == fl){
+        return;
+    } else if (st == en){
         return;
     }
     
