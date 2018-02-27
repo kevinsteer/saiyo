@@ -37,13 +37,29 @@ body {
     text-shadow: none;
 }
 
+.next-button {
+    float:right;
+    margin-top: 10px;
+    display: block;
+    position: fixed;
+    right: 0px;
+    height: 90px;
+    width: 90px;
+    background: white;
+    z-index: 1;
+}
+
 .return-button {
-    margin-top: 20px;
+    margin-top: 10px;
     display: block;
     position: fixed;
     height: 90px;
     width: 90px;
+<<<<<<< HEAD
     background: url(/image/backbtn.png) center bottom no-repeat;
+=======
+    background: url(/image/backbtnot.png) center bottom no-repeat;
+>>>>>>> 8aba85b66581e41b2ab141937028ce2fcac3dd32
     background-size: 90px auto;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
     z-index: 1;
@@ -53,13 +69,16 @@ body {
     height: 100%;
     width: 100%;
     display: block;
-      
-        font-size: 67px;
-       padding-left: 14px;
-       padding-top: 0px ;
-       color: aliceblue;
-    }
+    text-indent: -9999px;
 }
+
+.next-button-in {
+    height: 100%;
+    width: 100%;
+    display: block;
+    text-indent: -9999px;
+}
+
 
 /*----- Better timeline ----*/
 #oneday-wrapper {
