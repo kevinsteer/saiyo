@@ -573,7 +573,6 @@ span.phone {
     width: 130px !important;
     background-color: 707070 !important;
     box-shadow: 0px 0px 0px rgba(0,0,0,0.8);
-    text-indent: -1 !important;
     z-index: 10 !important;
 }
     .content-title {
