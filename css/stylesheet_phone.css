@@ -627,7 +627,12 @@ div.title-box {
         font-size: 90px !important;
        padding-left: 15px !important;
        padding-top: 0px !important;
-    }    
+    }
+    #access {
+        width: 100% !important;
+        height: 1200px !important;
+        
+    }
 }
 
 
