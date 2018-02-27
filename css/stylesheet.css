@@ -470,7 +470,7 @@ a {
 }
 
 .flow-bg {
-    background: url(/image/flow.png) center center no-repeat;
+    background: url(../image/FLOW@1x.png) center center no-repeat;
     background-size: contain;
     height: 500px;
 }
