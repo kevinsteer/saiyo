@@ -382,7 +382,7 @@ a {
 #workplace {
     width: 100%;
     margin: 50px 0;
-    padding: 50px 0;
+    padding: 50px 0 0 0;
 }
 
 .workplace-wrapper {
@@ -430,6 +430,20 @@ a {
     margin-left: 8%;
     margin-right: 10%;
 }
+
+/*-- flow --*/
+
+#flow {
+    height: 500px;
+    padding: 50px 0;
+}
+
+.flow-wrapper {
+    background: url(/image/FLOW.png) center center no-repeat;
+    background-size: contain;
+    height: 500px;
+}
+
 
 /*----- access --*/
 #access {
