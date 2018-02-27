@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>  
+<head>
+<link href="../js/dist/aos.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">    
+<link rel="stylesheet" href="css/stylesheet.css">
 <link rel="stylesheet" href="css/stylesheet_phone.css">
-<link rel="stylesheet" href="css/hamburgers.css">    
+<link rel="stylesheet" href="css/hamburgers.css">   
     <title>S2 RECRUIT 2019</title>
-    
-    
-    
-    
-    
-    
+  
 </head>
-<!--<script src="js/phone.js"></script>-->
+<<<<<<< HEAD:index_adrian.html
 <body>
+  
+=======
+<body onload="initialize();">
+>>>>>>> master:index.html
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<script>AOS.init();</script>  
     <header class="menu-wrapper header">
       <div class="menu-header browser">
         <div class="menu-inner">
@@ -29,23 +32,9 @@
             </div>    
           </div>
         </div>
-<!--        
-<div class="dropdown">
-<button onclick="myFunction()" class="dropbtn">Dropdown</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </div>
-</div>
-  -->
+
 <div class="dropdown phone">
      <a href="/" class="logo">S2</a> 
-     <!-- <input class="menu-btn" type="checkbox" id="menu-btn" />
-         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-     -->
-
-   
     
             
  <button onclick="myFunction()" id="target_drp" class="dropbtn hamburger hamburger--squeeze" type="button">
@@ -56,11 +45,11 @@
 
 
   <div id="myDropdown" class="dropdown-content">
-    <a id="drop1" href="#PM">MESSAGE</a>
-    <a id="drop2" href="#jobs" type="button">JOB</a>
-    <a id="drop3" href="#workplace">WORKPLACE</a>
-    <a id="drop4" href="#flow">FLOW</a>
-    <a id="drop5" href="#entry">ENTRY</a>
+    <a id="drop1" href="#PM" onclick="document.getElementById('target_drp').click()">MESSAGE</a>
+    <a id="drop2" href="#jobs" onclick="document.getElementById('target_drp').click()">JOB</a>
+    <a id="drop3" href="#workplace" onclick="document.getElementById('target_drp').click()">WORKPLACE</a>
+    <a id="drop4" href="#flow" onclick="document.getElementById('target_drp').click()">FLOW</a>
+    <a id="drop5" href="#entry" onclick="document.getElementById('target_drp').click()">ENTRY</a>
   </div>
 </div>
    
@@ -68,7 +57,6 @@
 
 
 </header>
-    
     <section class="section-wrapper">
     <section id="top">
         <div class="inner">
@@ -130,7 +118,7 @@
             </div>    
              <!---- Scroll ---->
             <div class="scroll browser" id="scroll">
-              <p class="scroll-text ">Scroll</p>    
+              <p class="scroll-text">Scroll</p>    
               <img src="image/#" alt class="scroll-mouse">
             </div>
         </div>
@@ -159,43 +147,45 @@
     </section>
     <section id="jobs">
         <div class="jobs-wrapper">
-            <div class="jobs-engineer jobs-center">
-                <h2 class="jobs-header jobs-left"> Server Engineer</h2>
-                <p class="jobs-para jobs-left">HAHAHAHAHAHAHADDDDDDDDDDDDDDD
-    DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD</p>
-                <button class="jobs-button jobs-right jobs-hover-white">More &raquo;</button>
+            <div class="jobs-eng jobs-ctr">
+                <h2 class="jobs-header jobs-left">SERVER ENGINEER</h2>
+                <p class="jobs-ctn jobs-left"></p>
+                <div class="btn1">
+                    <a class="a1"href="/">more</a>
+                </div>
             </div>
-            <div class="jobs-web jobs-center">
-                <h2 class="jobs-header  jobs-left"> Web Application Engineer</h2>
-                <p class="jobs-para jobs-left">HAHAHAHAHAHAHA</p>
-                <!--- change button class -->
-                <button class="jobs-button jobs-right jobs-hover-white">More &raquo;</button>
+            <div class="jobs-web jobs-ctr">
+                <h2 class="jobs-header  jobs-left">WEB ENGINEER</h2>
+                <p class="jobs-ctn jobs-left">HAHAHAHAHAHAHA</p>
+                <div class="btn2">
+                    <a class="a2"href="/">more</a>
+                </div>
             </div>
-            <div class="jobs-other jobs-center">
-                <h2 class="jobs-header  jobs-left"> Other Jobs</h2>  
-                <p class="jobs-para jobs-left">HAHAHAHAHAHAHA</p>
-                <!--- change button class -->
-                <button class="jobs-button jobs-right jobs-hover-white">More &raquo;</button>  
+            <div class="jobs-oth jobs-ctr">
+                <h2 class="jobs-header  jobs-left">Other Jobs</h2>  
+                <a href="../jobtype.html">more</a>
+                <div class="btn3">
+                    <a class="a3"href="/">more</a>
+                </div>  
             </div>    
         </div>
     </section>
     <section id="workplace">
-        <div class="workplace-wrapper">
-            <div class="workplace-web workplace-center">
-                <div class="workplace-wrapper2">
-                    <h2 class="workplace-header workplace-center workplace-left">
-                        <span>
-                            <span class="workplace-left"> WORKPLACE <br/>
+        <div class="workplace-wrapper" id="triggerwork">
+            <div class="workplace-title-wrapper">
+                    <div class="btn-workplace-contents" data-aos="fade-left" data-aos-anchor="#triggerwork" data-aos-anchor-placement="top-center">
+                    <a href="../jobtype.html">more</a>
+                    </div>
+                    <div class="workplace-title-contents" data-aos="fade-right" data-aos-anchor="#triggerwork" data-aos-anchor-placement="top-center">
+                    <span class="workplace-left"> WORKPLACE <br/>
                             +<br/>
                         CULTURE</span> 
-                            <span class="workplace-left">
-                                <div class="btn-workplace">
-                                    <a href="/">more</a>
-                                </div>
-                            </span>
-                        </span>
-                    </h2>
+<<<<<<< HEAD
                 </div>
+                ^^
+=======
+                </div>    
+>>>>>>> 6e23ebd3e74fd09a71ac5b6ecbdb8c7752189d21
             </div>
         </div>
     </section>    
@@ -210,16 +200,20 @@
                 <a href="#wantedly" class="button-wantedly"><span>Wantedlyへエントリー</span></a>
             </div>
         </div>
-    </section>    
+<<<<<<< HEAD:index_adrian.html
+    </section>
     
-<script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
+
+<script type="text/javascript">    
+
+
+
 function myFunction() {
+
     document.getElementById("myDropdown").classList.toggle("show");
 }
 
-// Close the dropdown if the user clicks outside of it
+
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
 
@@ -238,17 +232,7 @@ window.onclick = function(event) {
 
 
 
- /**
-   * forEach implementation for Objects/NodeLists/Arrays, automatic type loops and context options
-   *
-   * @private
-   * @author Todd Motto
-   * @link https://github.com/toddmotto/foreach
-   * @param {Array|Object|NodeList} collection - Collection of items to iterate, could be an Array, Object or NodeList
-   * @callback requestCallback      callback   - Callback function for each iteration.
-   * @param {Array|Object|NodeList} scope=null - Object/NodeList/Array that forEach is iterating over, to use as the this value when executing callback.
-   * @returns {}
-   */
+
     var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.call(t))for(var c in t)Object.prototype.hasOwnProperty.call(t,c)&&o.call(r,t[c],c,t);else for(var e=0,l=t.length;l>e;e++)o.call(r,t[e],e,t)};
     var hamburgers = document.querySelectorAll(".hamburger");
     if (hamburgers.length > 0) {
@@ -259,16 +243,65 @@ window.onclick = function(event) {
       });
     }
 
-    
-  
+   
+ /**
+   * forEach implementation for Objects/NodeLists/Arrays, automatic type loops and context options
+   *
+   * @private
+   * @author Todd Motto
+   * @link https://github.com/toddmotto/foreach
+   * @param {Array|Object|NodeList} collection - Collection of items to iterate, could be an Array, Object or NodeList
+   * @callback requestCallback      callback   - Callback function for each iteration.
+   * @param {Array|Object|NodeList} scope=null - Object/NodeList/Array that forEach is iterating over, to use as the this value when executing callback.
+   * @returns {}
+   */  
 
-</script>        
-
-
-                  
-                
-                                          
+</script>                                
+</body>
+=======
+    </section>  
+    <section id="access">
+        <h1>Access</h1>
+         <div id="map"></div>
+         <script type="text/javascript">
+	var loadedGoogleMap = function(){
+		function initialize() {
+			var myLatlng = {lat: 39.7161102, lng: 140.1204176}; //マーカーの位置（＝所在地）
+            
+            var styles = [
+				{
+					stylers: [
+						{ hue: "#337FF0" },
+						{ lightness: 0 },
+						{ saturation: -100 },
+						{ gamma: 1 },
+						{ invert_lightness: false},
+						{ visibility: "simplified"}
+					]
+				}
+			];
+			var mapOptions = {
+				center: myLatlng,
+				zoom: 17,
+                styles: styles, 
+			};
+			var map = new google.maps.Map(document.getElementById('map'),mapOptions);
+        var marker = new google.maps.Marker({
+				position: myLatlng,
+				map: map,
+				title: '株式会社エスツー',
+                icon:'image/mapicon.png'
+					});
+            
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+	};
+</script>
+<script async defer src="//maps.googleapis.com/maps/api/js?key=AIzaSyBr4lqQ_z1DmjsgX7zqfwNZFT5Mkxrdrh8
+&callback=loadedGoogleMap"></script>
+    </section>
     </body>
+>>>>>>> master:index.html
 </html>
 
 
