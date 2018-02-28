@@ -174,6 +174,7 @@ a {
     height: 60px;
     text-align: center;
     background: url(../image/entrybtn.svg) no-repeat center center;
+    background-size: cover;
     overflow: hidden;
     white-space: nowrap;
     transition: 0.4s 0s ease;
@@ -188,6 +189,7 @@ a {
 
 .button-top:hover {
     background: url(../image/entrybtnhvr.svg) no-repeat center center;
+    background-size: cover;
 }
 #top {
    padding-bottom: %; /*---background: url(../image/bg.png) no-repeat center center;
@@ -336,6 +338,29 @@ a {
     margin-top: 75px;
     height: 700px;
     background: #2d2d2d;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.pm-title {
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.pm-title span::before {
+    content: "";
+    display: block;
+    border-top: 2px solid #2cb4d6;
+    width: 120px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.pm-title span {
+    display: block;
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-top: 10px;
 }
 
 .right-line {
@@ -421,7 +446,7 @@ a {
     width: 850px;
     height: 250px;
     border-radius: 10px;
-   /*--- box-shadow: 0px 1px 4px rgba(0,0,0,0.2); --*/
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.2);
 }
 
 .jobs-header {
@@ -505,6 +530,28 @@ a {
     border-radius: 5px;
 }
 
+.workplace-title-contents .txtJp::before {
+    content: "";
+    display: block;
+    border-top: 2px solid #2cb4d6;
+    width: 100px;
+    margin: auto;
+}
+
+.workplace-title-contents .txtJp {
+    display: block;
+    font-family: 'Noto Sans Japanese';
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+ .middleplus {
+    /*-- color: #2cb4d6; --*/
+    font-weight: 100;
+    font-size: 30px;
+}
+
 #workplace .btn-wrapper {
     margin-left: 8%;
     margin-right: 10%;
@@ -577,8 +624,8 @@ a {
 #entry::before { 
   display: block; 
   content: " "; 
-  margin-top: -70px; 
-  height: 70px; 
+  margin-top: -50px; 
+  height: 50px; 
   visibility: hidden; 
 }
 
