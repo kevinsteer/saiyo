@@ -5,21 +5,23 @@
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">    
 <link rel="stylesheet" href="css/stylesheet.css">
     <title>S2 RECRUIT 2019</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
-<body onload="initialize();">
-<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-<script>AOS.init();</script>
-    <header class="menu-wrapper">
-      <div class="menu-header">
-        <div class="menu-inner">
+<body>
+<script type="text/javascript" src="/js/common.js"></script>
+    <header class="menu-wrapper clearfix">
+      <div class="menu-header clearfix">
+        <div class="menu-inner clearfix">
             <h1 class="logo"><a href="">S2</a></h1>
           <nav class="Li">
-            <li class="Li-GlobalMenu"><a href="#PM"><span>MESSAGE</span></a></li>
-            <li class="Li-GlobalMenu"><a href="#jobs"><span>JOB</span></a></li>
-            <li class="Li-GlobalMenu"><a href="#workplace"><span>WORKPLACE</span></a></li>
-            <li class="Li-GlobalMenu"><a href="#flow"><span>FLOW</span></a></li>  
-            </nav>
-          <div class="menu-Ebutton">
+            <ul class="gnav">  
+                <li class="gnav-li clearfix"><a href="#PM" class="gnav-hover">MESSAGE</a></li>
+                <li class="gnav-li clearfix"><a href="#jobs" class="gnav-hover">JOBS</a></li>
+                <li class="gnav-li clearfix"><a href="#workplace" class="gnav-hover">WORKPLACE</a></li>
+                <li class="gnav-li clearfix"><a href="#flow" class="gnav-hover">FLOW</a></li>
+            </ul>    
+          </nav>
+          <div class="menu-Ebutton clearfix">
               <a href="#entry" class="button-top"><span>ENTRY</span></a>
             </div>    
           </div>
@@ -92,48 +94,54 @@
         </div>
     </section>
     <section id="PM">
-		<div class="PM-line">
-			<ul class="sample_menu" style="flex-flow:row nowrap;">
-			<li style="flex-basis:50%; border-bottom: medium solid #ff00ff;"></li>
-			<li style="flex-basis:30%;"></li>
-			<li style="flex-basis:50%; border-bottom: medium solid #ff00ff;"></li>
-			</ul>
-		</div>
-        <img class="img-max" src="/image/sample1.png" />
-        <p class="PM-title"><h2>presidents</h2>message</p>
-        <p class="PM-content">これはテストメッセージです。これはテストメッセージです。
-				<br> これはテストメッセージです。これはテストメッセージです。
-				<br> これはテストメッセージです。これはテストメッセージです。
-				<br> これはテストメッセージです。これはテストメッセージです。
-				<br> これはテストメッセージです。これはテストメッセージです。
-				<br> これはテストメッセージです。これはテストメッセージです。
-				<br> これはテストメッセージです。これはテストメッセージです。
-				<br> これはテストメッセージです。これはテストメッセージです。
-				<br>
-			</p>
-        <img class="alignleft" src="image/Silueta.png">
+        <div class="pm-wrapper">
+		      <div class="PM-line">
+			     <ul class="sample_menu" style="flex-flow:row nowrap;">
+			         <li style="flex-basis:50%; border-bottom: medium solid #ff00ff;"></li>
+			         <li style="flex-basis:30%;"></li>
+			         <li style="flex-basis:50%; border-bottom: medium solid #ff00ff;"></li>
+			     </ul>
+		      </div>
+            <div class="msg-ctn">
+                <h2>Presidents Message</h2>
+                <p class="msg-contents">これはテストです。テスト。テストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト</p>
+            </div>
+            <div class="pm-image"></div>
+        </div>    
     </section>
     <section id="jobs">
         <div class="jobs-wrapper">
-            <div class="jobs-eng jobs-ctr">
-                <h2 class="jobs-header jobs-left">SERVER ENGINEER</h2>
-                <p class="jobs-ctn jobs-left"></p>
-                <div class="btn1">
-                    <a class="a1"href="/">more</a>
+            <div class="jobs-title">
+                <h2>WHAT WE DO<span>事業紹介</span></h2>
+            </div>
+            <div class="jobs-eng jobs-ctr" data-aos="fade-left" data-aos-offset="200" data-aos-once="true">
+                <div class="jobs-ctn clearfix">
+                    <h2 class="jobs-header">SERVER ENGINEER
+                        <span class="txtJp">サーバーエンジニア</span></h2>
+                    <p class="jobs-desc"></p>
+                    <div class="btn">
+                        <a class="a" href="/server_engineer.html">more</a>
+                    </div>
+                </div>    
+            </div>
+            <div class="jobs-web jobs-ctr" data-aos="fade-right" data-aos-offset="200" data-aos-once="true">
+                <div class="jobs-ctn clearfix">
+                    <h2 class="jobs-header">WEB APPLICATION ENGINEER
+                        <span class="txtJp">WEBアプリケーションエンジニア</span></h2>
+                    <p class="jobs-desc"></p>
+                    <div class="btn">
+                        <a class="a" href="/web_engineer.html">more</a>
+                    </div>
                 </div>
             </div>
-            <div class="jobs-web jobs-ctr">
-                <h2 class="jobs-header  jobs-left">WEB ENGINEER</h2>
-                <p class="jobs-ctn jobs-left">HAHAHAHAHAHAHA</p>
-                <div class="btn2">
-                    <a class="a2"href="/">more</a>
-                </div>
-            </div>
-            <div class="jobs-oth jobs-ctr">
-                <h2 class="jobs-header  jobs-left">Other Jobs</h2>  
-                <a href="../jobtype.html">more</a>
-                <div class="btn3">
-                    <a class="a3"href="/">more</a>
+            <div class="jobs-oth jobs-ctr" data-aos="fade-left" data-aos-offset="200" data-aos-once="true">
+                <div class="jobs-ctn clearfix">
+                    <h2 class="jobs-header">GENERAL
+                        <span class="txtJp">総合職</span></h2>
+                    <p class="jobs-desc"></p>
+                    <div class="btn">
+                        <a class="a" href="/general.html">more</a>
+                    </div>
                 </div>  
             </div>    
         </div>
@@ -141,41 +149,55 @@
     <section id="workplace">
         <div class="workplace-wrapper" id="triggerwork">
             <div class="workplace-title-wrapper">
-                    <div class="btn-workplace-contents" data-aos="fade-left" data-aos-anchor="#triggerwork" data-aos-anchor-placement="top-center">
-                    <a href="../jobtype.html">more</a>
+                <div class="btn-wrapper" data-aos="fade-left" data-aos-anchor="#triggerwork" data-aos-anchor-placement="top-center" data-aos-once="true">
+                    <div class="btn">
+                        <a href="../wkpcul4.html">more</a>
                     </div>
-                    <div class="workplace-title-contents" data-aos="fade-right" data-aos-anchor="#triggerwork" data-aos-anchor-placement="top-center">
+                </div>    
+                <div class="workplace-title-contents" data-aos="fade-right" data-aos-anchor="#triggerwork" data-aos-anchor-placement="top-center" data-aos-once="true">
                     <span class="workplace-left"> WORKPLACE <br/>
                             +<br/>
                         CULTURE</span> 
-<<<<<<< HEAD
                 </div>
-                ^^
-=======
-                </div>    
->>>>>>> 6e23ebd3e74fd09a71ac5b6ecbdb8c7752189d21
             </div>
         </div>
     </section>    
     <section id="flow">
-			<div class="flow-wrapper">
-				<img class="img-max" src="image/sampleFlow.png">
+        <div class="flow-wrapper">
+            <div class="flow-title">
+                <h2>RECRUIT FLOW<span>選考のながれ</span></h2>
+            </div>
+			<div class="flow-bg" data-aos="fade" data-aos-once="true" data-aos-offset="300" aos-data-delay="300">
 			</div>
+            <p class="flow-text">弊社の新卒採用で２つのながれがあります。説明会に応募したいコースを選べます。まずは下記エントリーボタンより、エントリをお願いいたします。</p>
+        </div>
     </section>    
     <section id="entry">
-        <div class="inner">
+        <div class="entry-wrapper">
+            <div class="entry-title">
+                <h2>ENTRY<span>WANTEDLYエントリーフォームにリンクします。</span></h2>
+            </div>
             <div class="WTDLYbutton">
-                <a href="#wantedly" class="button-wantedly"><span>Wantedlyへエントリー</span></a>
+                <a href="https://www.wantedly.com/" target="_blank" class="btn-ctn"><span>インターンへ応募する</span></a>
+            </div>
+            <div class="WTDLYbutton">
+                <a href="https://www.wantedly.com/" target="_blank" class="btn-ctn"><span>一般へ応募する</span></a>
             </div>
         </div>
     </section>  
     <section id="access">
-        <h1>Access</h1>
+        <div class="access-wrapper">
+        <div class="access-title-wrap">
+            <div class="access-title clearfix">
+                <h2><span class="txtEn">ACCESS</span><span class="txtJp">アクセス</span></h2>
+            </div>
+        </div>    
          <div id="map"></div>
          <script type="text/javascript">
 	var loadedGoogleMap = function(){
 		function initialize() {
 			var myLatlng = {lat: 39.7161102, lng: 140.1204176}; //マーカーの位置（＝所在地）
+            var myLatlng2 = {lat: 39.716847, lng: 140.122046};//centerの位置（＝所在地
             
             var styles = [
 				{
@@ -190,7 +212,7 @@
 				}
 			];
 			var mapOptions = {
-				center: myLatlng,
+				center: myLatlng2,
 				zoom: 17,
                 styles: styles, 
 			};
@@ -206,11 +228,14 @@
 		google.maps.event.addDomListener(window, 'load', initialize);
 	};
 </script>
-<script async defer src="//maps.googleapis.com/maps/api/js?key=AIzaSyBr4lqQ_z1DmjsgX7zqfwNZFT5Mkxrdrh8
+<script async defer src="//maps.googleapis.com/maps/api/js?language=ja&key=AIzaSyBr4lqQ_z1DmjsgX7zqfwNZFT5Mkxrdrh8
 &callback=loadedGoogleMap"></script>
+        </div>        
     </section>
-    </body>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>    
+    <script>
+        AOS.init();
+    </script> 
+    </section>    
+</body>
 </html>
-
-
-		
