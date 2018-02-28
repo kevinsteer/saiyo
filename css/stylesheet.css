@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 
 .section-wrapper {
@@ -498,3 +499,712 @@ a {
 =======
 <<<<<<< HEAD
 >>>>>>> 6e23ebd3e74fd09a71ac5b6ecbdb8c7752189d21
+=======
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+.section-wrapper {
+    overflow: hidden;
+}
+
+#scroll {
+    height: 70px;
+    position: absolute;
+    display: inline;
+    left: 50%;
+    top: 495px; 
+}
+.scroll-text {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix: {
+    zoom:1;
+}
+
+.clearfix:before {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", "Noto Sans Japanese", sans-serif;
+    font-size: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+div {
+    display: block;
+}
+li {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+.btn {
+    background: url(/image/btn_test_normalx4.png) center bottom no-repeat;
+    background-size: 150px auto;
+    width: 150px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: 0.3s 0s ease;
+    transition-property: background;
+}
+
+.btn:hover {
+    background: url(/image/btn_test_hoverx4.png) no-repeat center bottom;
+    background-size: 150px auto;   
+}
+
+.btn a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-indent: -9999px;
+}
+
+.menu-wrapper:before {
+    content: "";
+    display: block;
+    height: 10px;
+}
+
+.menu-wrapper-hide {
+    -webkit-transform: translateY(-150%);
+    transform: translateY(-150%);
+}
+
+.menu-wrapper {
+    width: 100%;
+    position: fixed;
+    min-width: 1280px;
+    z-index: 1000;
+    -webkit-transition: top 0.3s cubic-bezier(0.23, 1 ,0.58, 1);
+    transition: transform 0.3s cubic-bezier(0.23, 1 ,0.58, 1);
+}
+
+.menu-header {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.08);
+}
+
+.menu-inner {
+    display: table;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+}
+
+.logo {
+    display: table-cell;
+    width: 150px;
+    text-indent: -9999px;
+    background: url(../image/logo.svg) no-repeat center center;
+    background-size: auto 85%;
+    vertical-align: middle;
+}
+
+.logo a {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.gnav {
+    margin: 0px;
+    float:left;
+    display: inline-block;
+    padding-left: 200px;
+    line-height: 60px;
+}
+
+.gnav-li {
+    display: inline-block;
+    margin-right: 60px;
+    font-weight: 700;
+    color: #111;
+}
+
+.gnav-li a{
+    display: block;
+    font-weight: 700;
+    color: #111;
+    text-decoration: none;
+}
+
+.gnav-hover {
+    position: relative;
+    transition: all .3s ease;
+}
+
+.gnav-hover:hover {
+    color: #e26669;
+}
+
+.menu-Ebutton {
+    position: relative;
+    float: right;
+}
+
+.button-top {
+    display: table;
+    width: 140px;
+    height: 60px;
+    text-align: center;
+    background: url(../image/entrybtn.svg) no-repeat center center;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: 0.4s 0s ease;
+    transition-property: background;
+}
+
+.button-top span {
+    display: table-cell;
+    vertical-align: middle;
+    color: #fff;
+}
+
+.button-top:hover {
+    background: url(../image/entrybtnhvr.svg) no-repeat center center;
+}
+#top {
+   padding-bottom: %; /*---background: url(../image/bg.png) no-repeat center center;
+    background-size: contain; --*/
+}
+
+.inner {
+    height: 760px;
+}
+
+.title-top {
+    width: auto;
+    text-indent: -9999px;
+}
+
+.catchcopy {
+    display: block;
+    background: url(../image/catchcopy.svg) no-repeat;
+    background-position: center;
+    padding-top: 29%;
+    width: 56%;
+    margin: 0 auto;
+}
+.float {
+    margin: 0;
+    z-index: -1;
+    position: absolute;
+}
+.SwayC1 {
+    position: absolute;
+    background: url(../image/balloonrd.svg) no-repeat;
+    left: 44%;
+    top: 60px;
+    width: 5%;
+    height: 5%;
+    z-index: -1;
+}
+
+.SwayL1 {
+    position: absolute;
+    background: url(../image/balloonbl.svg) no-repeat center center;
+    top: 41%;
+    left: 13%;
+    /*--- value 35px --*/
+    width: 8%;
+    height: 8%;
+    z-index: -1;
+}
+
+.SwayR1 {
+    position: absolute;
+    background: url(../image/balloonclr.svg) no-repeat center center;
+    top: 27%;
+    right: 9%;
+    /*--- value 35px --*/
+    width: 9%;
+    height: 9%;
+    z-index: -1;
+}
+
+.newsreel {
+    position: absolute;
+    top: 674px;
+}
+
+.newsheader {
+    position: relative;
+    margin: 1% 0 0;
+    width: 100%;
+    border-bottom: 1px solid;
+    border-bottom-color: black;
+}
+
+.newsheader-font {
+    margin: 0 auto 0 20px;
+    font-weight: 600;
+}
+.news {
+    display: block;
+    position: relative;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    min-width: 34%;
+}
+
+.news-item {
+    font-family: "Noto Sans Japanese", sans-serif;
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    background: rgba(44,180,214,0);
+    transition: 0.4s 0s ease;
+    transition-property: background;
+    border-bottom: 1px solid;
+    border-bottom-color: rgba(204,204,204,.4);
+}
+
+.news-item:hover {
+    background: rgba(44,180,214,0.2);
+    cursor: pointer;
+}
+
+.news-item a {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-size: .9em;
+    font-weight: 200;
+    
+}
+
+.newsitem-meta {
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+.newsdate {
+    display: inline-block;
+    letter-spacing: normal;
+    padding: 0 10px 0 20px;
+}
+
+.newstag {
+    min-width: 65px;
+    background: #2cb4d6;
+    border-radius: 4px;
+    color: #fff;
+    margin: 10px;
+    padding: 2px;
+    line-height: 1.4;
+    text-align: center;
+    font-size: .8em;
+    
+}
+
+.newsitem-text {
+    padding: 0px 12px;
+    font-size: 13px
+}
+
+/* PM Message */
+#PM {
+    margin-top: 75px;
+    height: 700px;
+    background: #2d2d2d;
+}
+
+.right-line {
+			max-width: 3%;
+			border-bottom:
+			inset 5px #ffffff;
+			position:relative;
+		}
+
+.left-line {
+			max-width:
+			300px;
+			border-bottom:
+			inset 5px #ffffff;
+			position:relative;
+			top:70px;
+		}
+
+	
+		.img-max {
+		width: 100%;
+		padding-left: 0%;
+        }
+
+				ul.sample_menu {
+		display:-webkit-flex;
+		display:flex;
+		position: relative;
+		top: 50%;
+		flex-wrap:wrap-reverse;
+		width:100%;
+		list-style-type:none;
+		margin:0; padding:0;
+		}
+		/* 白線がよくわからない end 20180213hayashi */
+
+/*---- Job Types ---*/
+
+#jobs {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.jobs-title {
+    font-size: 1.8rem;
+    color: #2d2d2d;
+}
+
+.jobs-title span::before {
+    content: "";
+    display: block;
+    border-top: 2px solid #2cb4d6;
+    width: 60px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.jobs-title span {
+    display: block;
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.jobs-eng {
+    background: url(/image/server2.jpeg) center no-repeat;
+    background-size: cover;
+}
+
+.jobs-web{
+    background: url(/image/mtg.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.jobs-oth {
+    background: url(/image/fax.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.jobs-ctr {
+    margin: 30px auto;
+    width: 850px;
+    height: 250px;
+    border-radius: 10px;
+   /*--- box-shadow: 0px 1px 4px rgba(0,0,0,0.2); --*/
+}
+
+.jobs-header {
+    padding: 10px 20px 20px;
+    text-align: left;
+    color: #fff;
+    font-size: 1.6rem;
+    display: block;
+    float: left;
+}
+
+.jobs-header .txtJp {
+    font-family: 'Noto Sans Japanese';
+    font-size: 14px;
+    font-weight: 300;
+    position: absolute;
+    line-height: 
+}
+
+.jobs-header span:before {
+    content: "";
+    display: block;
+    border-top: 2px solid #2cb4d6;
+    width: 225px;
+    margin: 3px 0;
+}
+
+#jobs .btn { 
+    position:absolute;top:40%;
+    position:absolute;left:70%;
+}
+
+/*----- Workplace Culture --*/
+
+#workplace {
+    width: 100%;
+    padding: 50px 0 0 0;
+}
+
+.workplace-wrapper {
+    height: 550px;
+    background: url(../image/8G4A0892.jpg) no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.workplace-title-wrapper {
+    display: -webkit-flex;
+    display: flex;
+    text-align: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    align-items: center;
+    -webkit-flex-direction:row-reverse;
+    flex-direction:row-reverse;
+    position: relative;
+    margin: auto;
+    height: 550px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.workplace-title-contents {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    color: white;
+    width: 400px;
+    height: 200px;
+    font-size: 45px;
+    line-height: 1.2em;
+    font-weight: 600;
+    margin: 3px;
+    border: 3px solid;
+    border-color: rgba(255,255,255,1);
+    border-radius: 5px;
+}
+
+#workplace .btn-wrapper {
+    margin-left: 8%;
+    margin-right: 10%;
+}
+
+/*-- flow --*/
+
+#flow::before { 
+  display: block; 
+  content: " "; 
+  margin-top: -70px; 
+  height: 70px; 
+  visibility: hidden; 
+}
+
+.flow-wrapper {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.flow-title {
+    font-size: 1.8rem;
+    color: #2d2d2d;
+}
+
+.flow-title span::before {
+    content: "";
+    display: block;
+    border-top: 2px solid #2cb4d6;
+    width: 100px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.flow-title span {
+    display: block;
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.flow-bg {
+    background: url(../image/FLOW@1x.png) center center no-repeat;
+    background-size: contain;
+    height: 500px;
+}
+
+.flow-text {
+    width: 620px;
+    margin: 0 auto;
+    line-height: 1.5rem;
+    font-weight: 300;
+    display: block;
+    color: #2d2d2d;
+}
+
+.flow-text::before {
+    content: "";
+    display: block;
+    border-top: 2px solid #2cb4d6;
+    margin:auto;
+    margin-bottom: 10px;
+    width: 400px;
+}
+
+
+/*---- Entry section --- */
+
+#entry::before { 
+  display: block; 
+  content: " "; 
+  margin-top: -70px; 
+  height: 70px; 
+  visibility: hidden; 
+}
+
+.entry-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+    background: #2d2d2d;
+}
+
+.WTDLYbutton {
+    width: 500px;
+    height: 60px;
+    margin: 25px auto 0;
+    background: #2cb4d6;
+    border-radius: 15px;
+    transition: 0.4s 0s ease;
+    transition-property: background;
+}
+
+.WTDLYbutton:hover {
+    background: #60defd;
+}
+
+.btn-ctn {
+    height: 100%;
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.entry-title {
+    font-size: 1.8rem;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+.entry-title span::before {
+    content: "";
+    display: block;
+    border-top: 2px solid #2cb4d6;
+    width: 100px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.entry-title span {
+    display: block;
+    font-weight: 200;
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: 'Noto Sans Japanese';
+}
+
+/*----- access --*/
+.access-wrapper {
+    width:100%;
+    height:525px;
+}
+
+.access-title-wrap {
+    width: 100%;
+    height: 100px;
+    background: rgba(0,0,0,0.6);
+    margin: 0 auto;
+    position: absolute;
+    z-index: 1;
+    padding: 10px 0;
+    text-align: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: columm;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.access-title {
+    color: white;
+    margin: 0 auto;
+    padding-right: 22px
+}
+
+.access-title .txtJp:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    border-left: 2px solid #2cb4d6;
+    margin: 0 20px;
+    height: 30px;
+}
+
+.access-title .txtJp {
+    margin-top: -2px;
+    display: block;
+    float: left;
+    font-weight: 200;
+    font-family: 'Noto Sans Japanese';
+    vertical-align: middle;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.access-title .txtEn {
+    display: block;
+    float: left;
+    line-height: 30px;
+}
+
+#map{
+    width:100%;
+    height:100%;
+    position: relative; 
+}
+>>>>>>> 2fe0b572b9e8b97da3b5ef794388ad0dace785df
