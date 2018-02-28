@@ -426,6 +426,7 @@ a {
 
 .jobs-header {
     padding: 10px 20px 20px;
+    display: block;
     text-align: left;
     color: #fff;
     font-size: 1.6rem;
@@ -435,9 +436,10 @@ a {
 
 .jobs-header .txtJp {
     font-family: 'Noto Sans Japanese';
+    display: block;
     font-size: 14px;
     font-weight: 300;
-    position: absolute;
+    position: relative;
     line-height: 
 }
 
