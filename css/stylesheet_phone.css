@@ -539,17 +539,22 @@ span.phone {
     
 /*JOBS page 携帯対策*/
     .title-box {
-        background-color: #2cb4d6;;
+        background-color: #2cb4d6;
     }   
+    div.title-box {
+        position: fixed;
+    }
     .schedule-header {
         font-size: 4.2em !important;
         text-align: center !important;
+         
     }    
     .job-header {
         padding-top: 22px;
         padding-right: 55px;
         font-size: 2em !important;
         color: #c9fffd !important;
+        
     }
     .schedule-content {
         padding-top: 2%;
@@ -569,11 +574,14 @@ span.phone {
  .return-button { 
     display: block;
     position: fixed;
-    height: 130px !important;
-    width: 130px !important;
+    height: 134px !important;
+    width: 134px !important;
     background-color: 707070 !important;
     box-shadow: 0px 0px 0px rgba(0,0,0,0.8);
     z-index: 10 !important;
+    background-size: 134px auto !important;
+    margin-top: 0px !important; 
+    box-shadow: 0px 0px 0px !important;  
 }
     .content-title {
     width: 40px !important;
@@ -614,16 +622,16 @@ div.title-box {
     padding-top: 10px !important;
 }    
 
-    .jobtype {
-     background: url(../image/takadamobile2.jpg)no-repeat center fixed;
-    background-size: cover;
-    color: #383838;
-}
    .return-button-in {
         font-size: 90px !important;
        padding-left: 15px !important;
        padding-top: 0px !important;
-    }    
+    }
+    #access {
+        width: 100% !important;
+        height: 1200px !important;
+        
+    }
 }
 
 
