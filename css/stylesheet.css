@@ -4,6 +4,18 @@
     overflow: hidden;
 }
 
+#scroll {
+    height: 70px;
+    position: absolute;
+    display: inline;
+    left: 50%;
+    top: 495px; 
+}
+.scroll-text {
+    margin: 0;
+    padding: 0;
+}
+
 .clearfix: {
     zoom:1;
 }
@@ -571,26 +583,23 @@ a {
 /*----- access --*/
 #access {
         width:100%;
-        height:900px;
+        height:470px;
         display: inline-block;
         box-sizing: border-box;
-        background-color: darkgray;   
+        background-color: darkorange;   
         position:relative;
 }
 
 #access h1{
         font-family:serif;
         color: white;
-        float: right;
-        margin-right: 30%;
+        margin: auto;
         font-style: bold;
         font-size: 300%;
+        text-align: center;
 }
 #map{
         width:100%;
-        height:60%;
+        height:100%;
         position: relative; 
-        bottom:10%;
 }
-
-
