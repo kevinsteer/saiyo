@@ -55,6 +55,7 @@ a {
     width: 150px;
     height: 40px;
     border: 2px solid white;
+    border-radius: 5px;
     transition: 0.3s 0s ease;
     transition-property: background;
 }
@@ -381,8 +382,7 @@ a {
 
 #workplace {
     width: 100%;
-    margin: 50px 0;
-    padding: 50px 0;
+    padding: 50px 0 0 0;
 }
 
 .workplace-wrapper {
@@ -424,11 +424,148 @@ a {
     margin: 3px;
     border: 3px solid;
     border-color: rgba(255,255,255,1);
+    border-radius: 5px;
 }
 
 #workplace .btn-wrapper {
     margin-left: 8%;
     margin-right: 10%;
+}
+
+/*-- flow --*/
+
+#flow::before { 
+  display: block; 
+  content: " "; 
+  margin-top: -70px; 
+  height: 70px; 
+  visibility: hidden; 
+}
+
+.flow-wrapper {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.flow-title {
+    font-size: 1.8rem;
+    color: #2d2d2d;
+}
+
+.flow-title span::before {
+    content: "";
+    display: block;
+    border-top: 2px solid #2cb4d6;
+    width: 100px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.flow-title span {
+    display: block;
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.flow-bg {
+    background: url(../image/FLOW@1x.png) center center no-repeat;
+    background-size: contain;
+    height: 500px;
+}
+
+.flow-text {
+    width: 620px;
+    margin: 0 auto;
+    line-height: 1.5rem;
+    font-weight: 300;
+    display: block;
+}
+
+.flow-text::before {
+    content: "";
+    display: block;
+    border-top: 2px solid #2cb4d6;
+    margin:auto;
+    margin-bottom: 10px;
+    width: 400px;
+}
+
+
+/*---- Entry section --- */
+
+#entry::before { 
+  display: block; 
+  content: " "; 
+  margin-top: -70px; 
+  height: 70px; 
+  visibility: hidden; 
+}
+
+.entry-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+    background: #2d2d2d;
+}
+
+.WTDLYbutton {
+    width: 500px;
+    height: 60px;
+    margin: 25px auto 0;
+    background: #2cb4d6;
+    border-radius: 15px;
+    transition: 0.4s 0s ease;
+    transition-property: background;
+}
+
+.WTDLYbutton:hover {
+    background: #60defd;
+}
+
+.btn-ctn {
+    height: 100%;
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.entry-title {
+    font-size: 1.8rem;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+.entry-title span::before {
+    content: "";
+    display: block;
+    border-top: 2px solid #2cb4d6;
+    width: 100px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.entry-title span {
+    display: block;
+    font-weight: 200;
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: 'Noto Sans Japanese';
 }
 
 /*----- access --*/
