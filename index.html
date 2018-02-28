@@ -111,6 +111,9 @@
     </section>
     <section id="jobs">
         <div class="jobs-wrapper">
+            <div class="jobs-title">
+                <h2>WHAT WE DO<span>事業紹介</span></h2>
+            </div>
             <div class="jobs-eng jobs-ctr" data-aos="fade-left" data-aos-offset="200" data-aos-once="true">
                 <h2 class="jobs-header jobs-left">SERVER ENGINEER</h2>
                 <p class="jobs-ctn jobs-left"></p>
@@ -173,12 +176,18 @@
         </div>
     </section>  
     <section id="access">
-        <h1>Access</h1>
+        <div class="access-wrapper">
+        <div class="access-title-wrap">
+            <div class="access-title clearfix">
+                <h2><span class="txtEn">ACCESS</span><span class="txtJp">アクセス</span></h2>
+            </div>
+        </div>    
          <div id="map"></div>
          <script type="text/javascript">
 	var loadedGoogleMap = function(){
 		function initialize() {
 			var myLatlng = {lat: 39.7161102, lng: 140.1204176}; //マーカーの位置（＝所在地）
+            var myLatlng2 = {lat: 39.716847, lng: 140.122046};//centerの位置（＝所在地
             
             var styles = [
 				{
@@ -193,7 +202,7 @@
 				}
 			];
 			var mapOptions = {
-				center: myLatlng,
+				center: myLatlng2,
 				zoom: 17,
                 styles: styles, 
 			};
@@ -209,8 +218,9 @@
 		google.maps.event.addDomListener(window, 'load', initialize);
 	};
 </script>
-<script async defer src="//maps.googleapis.com/maps/api/js?key=AIzaSyBr4lqQ_z1DmjsgX7zqfwNZFT5Mkxrdrh8
+<script async defer src="//maps.googleapis.com/maps/api/js?language=ja&key=AIzaSyBr4lqQ_z1DmjsgX7zqfwNZFT5Mkxrdrh8
 &callback=loadedGoogleMap"></script>
+        </div>        
     </section>
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>    
     <script>

@@ -333,7 +333,9 @@ a {
 
 /* PM Message */
 #PM {
-    margin: 75px 0px;
+    margin-top: 75px;
+    height: 700px;
+    background: #2d2d2d;
 }
 
 .right-line {
@@ -373,21 +375,57 @@ a {
 /*---- Job Types ---*/
 
 #jobs {
-    width: 100%;
-    padding-top: 60px;
-    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.jobs-title {
+    font-size: 1.8rem;
+    color: #2d2d2d;
+}
+
+.jobs-title span::before {
+    content: "";
+    display: block;
+    border-top: 2px solid #2cb4d6;
+    width: 60px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.jobs-title span {
+    display: block;
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.jobs-eng {
+    background: url(/image/server2.jpeg) center no-repeat;
+    background-size: cover;
+}
+
+.jobs-web{
+    background: url(/image/mtg.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.jobs-oth {
+    background: url(/image/fax.jpg) center no-repeat;
+    background-size: cover;
 }
 
 .jobs-ctr {
-    background: #60defc;
     margin: 30px auto;
     width: 800px;
     height: 250px;
-    border: 2px solid;
+    border: 2px solid white;
+    border-radius: 10px;
 }
 #jobs .btn { 
-    position:relative;top:40%;
-    position:relative;left:65%;
+    position:absolute;top:40%;
+    position:absolute;left:65%;
 }
 
 /*----- Workplace Culture --*/
@@ -493,6 +531,7 @@ a {
     line-height: 1.5rem;
     font-weight: 300;
     display: block;
+    color: #2d2d2d;
 }
 
 .flow-text::before {
@@ -581,25 +620,62 @@ a {
 }
 
 /*----- access --*/
-#access {
-        width:100%;
-        height:470px;
-        display: inline-block;
-        box-sizing: border-box;
-        background-color: darkorange;   
-        position:relative;
+.access-wrapper {
+    width:100%;
+    height:525px;
 }
 
-#access h1{
-        font-family:serif;
-        color: white;
-        margin: auto;
-        font-style: bold;
-        font-size: 300%;
-        text-align: center;
+.access-title-wrap {
+    width: 100%;
+    height: 100px;
+    background: rgba(0,0,0,0.6);
+    margin: 0 auto;
+    position: absolute;
+    z-index: 1;
+    padding: 10px 0;
+    text-align: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: columm;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    justify-content: center;
 }
+
+.access-title {
+    color: white;
+    margin: 0 auto;
+    padding-right: 22px
+}
+
+.access-title .txtJp:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    border-left: 2px solid #2cb4d6;
+    margin: 0 20px;
+    height: 30px;
+}
+
+.access-title .txtJp {
+    margin-top: -2px;
+    display: block;
+    float: left;
+    font-weight: 200;
+    font-family: 'Noto Sans Japanese';
+    vertical-align: middle;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.access-title .txtEn {
+    display: block;
+    float: left;
+    line-height: 30px;
+}
+
 #map{
-        width:100%;
-        height:100%;
-        position: relative; 
+    width:100%;
+    height:100%;
+    position: relative; 
 }
