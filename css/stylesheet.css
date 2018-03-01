@@ -4,13 +4,119 @@
     overflow: hidden;
 }
 
+.hotair {
+    -webkit-animation-name: balloon;
+    -webkit-animation-duration: 7s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-name: balloon;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.blue {
+    -webkit-animation-delay: .12s;
+    -webkit-animation-duration: 6s;
+    animation-delay: .12s;
+    animation-duration: 6s;
+}
+
+.red {
+    -webkit-animation-delay: .24s;
+    -webkit-animation-duration: 8s;
+    -webkit-animation-direction: alternate;
+    animation-delay: .24s;
+    animation-duration: 8s;
+    animation-direction: alternate;
+}
+
+.color {
+    -webkit-animation-delay: .8s;
+    -webkit-animation-duration: 9s;
+    animation-delay: .8s;
+    animation-duration: 9s;
+}
+
+@keyframes balloon {
+    0% {
+        transform: translate(0, 0)
+    }
+    50% {
+        transform: translate(0, 20px);
+    }
+    
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
 #scroll {
     height: 70px;
     position: absolute;
     display: inline;
+    margin: 0 auto;
+    top: 680px;
     left: 50%;
-    top: 495px; 
 }
+
+#scroll img {
+    width: 34px;
+    display: block;
+    margin: 10px auto;
+}
+
+.scroll-mouse {
+    -webkit-animation-delay: .5s;
+    -webkit-animation-name: scrollmouse;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease;
+    animation-delay: .5s;
+    animation-name: scrollmouse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease;
+}
+
+.scrolltext {
+    -webkit-animation-name: scrolltext;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease;
+    animation-name: scrolltext;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease;
+}
+
+
+@keyframes scrollmouse {
+    0%{
+        transform: translate(0, 0);
+    }
+    
+    50% {
+        transform: translate(0, -7px);
+    }
+    
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes scrolltext {
+    0%{
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(0, -6px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
 .scroll-text {
     margin: 0;
     padding: 0;
@@ -213,6 +319,9 @@ a {
     width: 56%;
     margin: 0 auto;
 }
+
+/*-- Animation -*/
+
 .float {
     margin: 0;
     z-index: -1;
@@ -249,6 +358,33 @@ a {
     height: 9%;
     z-index: -1;
 }
+
+.city {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 500px;
+}
+
+.Line1 {
+    width: 100%;
+    background: #2a2a2a;
+    height: 2px;
+    z-index: 1;
+    display: block;
+    position: relative;
+}
+
+.Rise1 {
+    display: block;
+    position: relative;
+    background: url(/image/city-01.svg) no-repeat center bottom;
+    width: 100%;
+    height: 140px;
+    
+}
+
+/*---News Section --*/
 
 .newsreel {
     position: absolute;
@@ -336,10 +472,15 @@ a {
 /* PM Message */
 #PM {
     margin-top: 75px;
-    height: 700px;
+    height: 100%;
     background: #2d2d2d;
     text-align: center;
     padding-top: 70px;
+}
+
+.pm-wrapper {
+    width: 850px;
+    margin: 0 auto;
 }
 
 .pm-title {
@@ -353,49 +494,33 @@ a {
     border-top: 2px solid #2cb4d6;
     width: 120px;
     margin: auto;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .pm-title span {
     display: block;
     font-weight: 300;
     font-size: 1.2rem;
-    margin-top: 10px;
+    margin: 5px 0 10px;
 }
 
-.right-line {
-			max-width: 3%;
-			border-bottom:
-			inset 5px #ffffff;
-			position:relative;
-		}
+.msg-ctn {
+    padding: 10px 0px;
+    color: white;
+    text-align: left;
+    line-height: 1.7rem;
+    font-weight: 200;
+    display: block;
+}
 
-.left-line {
-			max-width:
-			300px;
-			border-bottom:
-			inset 5px #ffffff;
-			position:relative;
-			top:70px;
-		}
-
-	
-		.img-max {
-		width: 100%;
-		padding-left: 0%;
-        }
-
-				ul.sample_menu {
-		display:-webkit-flex;
-		display:flex;
-		position: relative;
-		top: 50%;
-		flex-wrap:wrap-reverse;
-		width:100%;
-		list-style-type:none;
-		margin:0; padding:0;
-		}
-		/* 白線がよくわからない end 20180213hayashi */
+.pm-name {
+    text-align: right;
+    font-weight: 500;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    letter-spacing: .1em;
+    margin: 30px
+}
 
 /*---- Job Types ---*/
 
