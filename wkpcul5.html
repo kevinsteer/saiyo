@@ -5,6 +5,7 @@
 
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">    
 <link rel="stylesheet" href="css/stylesheet.css">
+<link rel="stylesheet" href="css/stylesheet-oneday.css">
     <style type="text/css">
   <!--
              
@@ -49,7 +50,6 @@ body {
         height:60%;
         display:inline-block;
         box-sizing: border-box;
-        background-color: rgba(0,0,0,0.1);
                 }
 .gallery1 img {
         width: 50%;
@@ -72,10 +72,9 @@ body {
 .gallery2 {
         width: 100%;
         height:60%;
-        display: inline-block;
+        display:inline-block;
         box-sizing: border-box;
-        background-color: rgba(0,0,0,0.1);
-              }
+            }
 .gallery2 img{
         width: 50%;
         height:100%;
@@ -88,13 +87,15 @@ body {
         display:inline-block;
         border-bottom:solid;
         font-size:300%;
-        margin-left:10%;
+        text-align: center;
+        position: relative;
+        left: 12%;
               }
 .gallery2 p {
         font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
         font-size:170%;
         margin-top: 10%;
-        margin-left:10%;
+        text-align: center;
             }
               
 .gallery3  {
@@ -102,7 +103,6 @@ body {
         height:60%;
         display: inline-block;
         box-sizing: border-box;
-         background-color: rgba(0,0,0,0.1);
             }
               
 .gallery3 img {
@@ -117,25 +117,26 @@ body {
         display: inline-block;
         border-bottom: solid;
         font-size: 300%;
+    
             }
 .gallery3 p {
         font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
         font-size:170%;
         margin-top: 10%;
-        margin-left:10%;
             }
               
 .gallery4 {
         width: 100%;
         height:60%;
+        display: inline-block;
         box-sizing: border-box;
-        background-color: rgba(0,0,0,0.1);
+        clear: both;
               }
               
 .gallery4 img{
         width: 50%;
         height:100%;
-        float: right;  
+        float: right; 
               } 
 .gallery4 h1{      
         font-family: serif;
@@ -143,7 +144,8 @@ body {
         font-size: 300%;
         display:inline-block;
         border-bottom:solid;
-        margin-left:10%;
+        position: relative;
+        left: 12%;
               }
 .gallery4 p {
         font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
@@ -155,7 +157,6 @@ body {
         width: 100%;
         height:60%;
         box-sizing: border-box;
-        background-color: rgba(0,0,0,0.1);
             }
 .gallery5 img{
         width: 50%;
@@ -179,19 +180,10 @@ body {
 .clear-element {
         clear: both;
             }
-#access {
-        width:100%;
-        height:80%;
-        }
-.access-header{
-        width:100%;
-        height:10%;
-        background-color:blueviolet;
-        display:inline-block;
-        
-        }
 
+        
 @media screen and (max-width:815px){
+    
 html {
         height:80%;
         width:100%;
@@ -203,34 +195,49 @@ body {
         height:80%;
         display: inline-block;
         overflow-x: hidden;
+          }
+.return-button {
+        margin-top: 10px;
+        display: block;
+        position: fixed;
+        height: 90px;
+        width: 90px;
+        background: url(/image/backbtnot.png) center bottom no-repeat;
+        background-size: 80% auto;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+        z-index: 1;
+            }
 
-     }
+.return-button-in {
+        height: 100%;
+        width: 100%;
+        display: block;
+        text-indent: -9999px;
+            }
+
 #main-visual{
-        width:100%;
-        height:80%;
-        display: inline-block;
-        box-sizing: border-box;
-        background-color: darkgray;
-        position: relative;
+        height: 450px;
+        background: url(../image/8G4A0892.jpg) no-repeat center center;
+        background-size: cover;
+        overflow: hidden;
              }
-#main-visual img {
-        position: absolute;
-        width:100%;
-        height:100%;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        margin: auto;   
-              }
-#main-visual h1{
-        color: rgba(255, 255, 255, 0.6);
-        font-family:serif;
-        font-size: 200%;
-        position: absolute;
-        font-weight: bold;
-        top: 40%;
-        left: 20%;
+#main-visual h1
+        {
+        display: -webkit-flex;
+        display: flex;
+        text-align: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        align-items: center;
+        -webkit-flex-direction:row-reverse;
+        flex-direction:row-reverse;
+        position: relative;
+        margin: auto;
+        height: 550px;
+        width: 100%;
+        font-size: 300%;
+        color: white;
+        background-color: rgba(0,0,0,0.1);
               }
 .gallery1{
         width: 100%;
@@ -244,7 +251,7 @@ body {
               
 .gallery1 img{
         width: 100%;
-        height:100%;  
+        height:60%;  
         
         display: block;
                 } 
@@ -252,12 +259,14 @@ body {
 .gallery1 h1{      
         font-family:serif;
         font-weight: bold;
-        font-size: 150%;
+        font-size: 180%;
+        width: 100%;
         text-align: center;
+        border-bottom: none;
               }
 .gallery1 p {
         font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
-        font-size:80%;
+        font-size:100%;
         margin-top: 5%;
         text-align: center;
             }
@@ -273,18 +282,22 @@ body {
               
 .gallery2 img{
         width: 100%;
-        height:100%;
+        height:60%;
                 } 
               
 .gallery2 h1{      
         font-family: serif;
         font-weight: bold;
-        font-size: 150%;
+        font-size: 180%;
+        width:100%;
         text-align: center;
+        position: relative;
+        left:0%;
+        border-bottom: none;
               }
 .gallery2 p {
         font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
-        font-size:80%;
+        font-size:100%;
         margin-top: 5%;
         text-align: center;
             }
@@ -297,23 +310,27 @@ body {
         box-sizing: border-box;
         background-color: white;
               }
-              
+    
 .gallery3 img{
-        width: 100%;
-        height:100%;
+        width:100%;
+        height:60%;
                 } 
               
 .gallery3 h1{      
         font-family: serif;
         font-weight: bold;
-        font-size: 150%;
+        font-size: 180%;
         text-align: center;
+        border-bottom: none;
+        width:100%;
             }
 .gallery3 p {
         font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
-        font-size:80%;
+        font-size:100%;
         margin-top: 5%;
+        margin-right: none;
         text-align: center;
+        width: 100%;
             }
 .gallery4 {
         width: 100%;
@@ -327,18 +344,22 @@ body {
               
 .gallery4 img{
         width: 100%;
-        height:100%;
+        height:60%;
                 } 
               
 .gallery4 h1{      
         font-family: serif;
         font-weight: bold;
-        font-size: 150%;
+        font-size: 180%;
         text-align: center;
+        position: relative;
+        left:0%;
+        width: 100%;
+        border-bottom: none
             }
 .gallery4 p {
         font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
-        font-size:80%;
+        font-size:100%;
         margin-top: 5%;
         text-align: center;
         }
@@ -354,85 +375,32 @@ body {
               
 .gallery5 img{
         width: 100%;
-        height:100%;
+        height:60%;
                 } 
               
 .gallery5 h1{      
         font-family: serif;
         font-weight: bold;
-        font-size: 150%;
+        font-size: 180%;
         text-align: center;
+        border-bottom: none;
+        width: 100%;
             }
 .gallery5 p {
         font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
-        font-size:80%;
+        font-size:100%;
         margin-top: 5%;
         text-align: center;
             }
-#access {
-        width:100%;
-        height:100%;
-        display:inline-block;
-        box-sizing: border-box;
-        padding-top:1%;
-        padding-bottom:5%;
-        background-color: #7f7f7f;  
-        position: relative;
-        }
-    
-#map   {
-        width:100%;
-        height:50%;
-        display:inline-block;
-        box-sizing: border-box;
-        position: absolute;
-        }
-
-                  
-#access h2{
-        font-family:serif;
-        color: #f7f7f7;
-        font-style: bold;
-        font-size: 200%;
-        display:inline-block;
-        position:relative;
-        left:70%;
-        width: 100%;
-        top: 2%;
-         }
-    
-#access h3{
-        font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
-        color: #f7f7f7;
-        font-style: bold;
-        font-size: 140%;
-        width:100%;
-        position:relative;
-        left:23%;
-        display:inline-block;
-             }
-#access p{
-        font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
-        color: #f7f7f7;
-        font-style: bold;
-        font-size: 120%;
-        position:relative;
-        left:-5%;
-        display:inline-block;
-             }
-#access img{
-        width:8%;
-        height:8%;
-        position:relative;
-        left:0%;
-        display:inline-block;
-             }
-        }
 -->
   </style>
     <title>S2 RECRUIT 2019| WorkPlace Culture</title>
 </head>
 <body onload="initialize();">
+    <div class="wrapper">
+            <div class="return-button">
+            <a href="../index.html" class="return-button-in">TOP</a>
+       </div>
     <section id="main-visual">
         <h1>WORKPLACE <br/>+<br/>CULTURE</h1>
     </section>
@@ -452,10 +420,10 @@ body {
             <h1>Sophisticated Office</h1>
             <p>機能性を兼ね備えた洗練されたオフィス<br>モデルルームのようなオフィスの椅子は座り心地も抜群</p>
         </div>
-        <div class="gallery4 clearfix">
+        <div class="gallery4">
             <img alt="galeery4-img" src="image/office4.jpg">
             <h1>Free Drink</h1>
-            <p>ウォーターサーバーやドリップコーヒー完備<br>好きなドリンクを飲みながら作業OKです<br>お菓子もありますよ</p>
+            <p>ウォーターサーバーやドリップコーヒーが利用可能です<br>好きなドリンクを飲みながら作業OKです<br>
         </div>
         <div class="gallery5">
             <img alt="galeery5-img" src="image/office5.jpg">
@@ -465,11 +433,52 @@ body {
     </section>
     <div class="clear-element"></div><!-- 空要素 -->
     <section id="access">
-        <div class="access-header">
-            <h2>ACCESS</h2>
-        </div>
-    </section>
+        <div class="access-wrapper">
+        <div class="access-title-wrap">
+            <div class="access-title clearfix">
+                <h2><span class="txtEn">ACCESS</span><span class="txtJp">アクセス</span></h2>
+            </div>
+        </div>    
+         <div id="map"></div>
+         <script type="text/javascript">
+	var loadedGoogleMap = function(){
+		function initialize() {
+			var myLatlng = {lat: 39.7161102, lng: 140.1204176}; //マーカーの位置（＝所在地）
+            var myLatlng2 = {lat: 39.716847, lng: 140.122046};//centerの位置（＝所在地
+            
+            var styles = [
+				{
+					stylers: [
+						{ hue: "#337FF0" },
+						{ lightness: 0 },
+						{ saturation: -100 },
+						{ gamma: 1 },
+						{ invert_lightness: false},
+						{ visibility: "simplified"}
+					]
+				}
+			];
+			var mapOptions = {
+				center: myLatlng2,
+				zoom: 17,
+                styles: styles, 
+			};
+			var map = new google.maps.Map(document.getElementById('map'),mapOptions);
+        var marker = new google.maps.Marker({
+				position: myLatlng,
+				map: map,
+				title: '株式会社エスツー',
+                icon:'image/mapicon.png'
+					});
+            
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+	};
+</script>
+<script async defer src="//maps.googleapis.com/maps/api/js?language=ja&key=AIzaSyBr4lqQ_z1DmjsgX7zqfwNZFT5Mkxrdrh8
+&callback=loadedGoogleMap"></script>
+ </div>
+        </section>
+    </div>
 </body>
 </html>
-    
-     
