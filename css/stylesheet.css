@@ -879,7 +879,138 @@ a {
 
 
 /*----------------------------------------------------------------------------------------------------------------------------------------- Workplace Page ---------------------------------------------------------------------*/
+#main-visual{
+        height: 550px;
+        background: url(../image/8G4A0892.jpg) no-repeat center center;
+        background-size: cover;
+        overflow: hidden;
+             }
+#main-visual h1
+        {
+        display: -webkit-flex;
+        display: flex;
+        text-align: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        align-items: center;
+        -webkit-flex-direction:row-reverse;
+        flex-direction:row-reverse;
+        position: relative;
+        margin: auto;
+        height: 550px;
+        width: 100%;
+        font-size: 400%;
+        color: white;
+        background-color: rgba(0,0,0,0.1);
+              }
+#gallery{
+        width: 100%;
+        height: 70%;
+            }        
+#gallery h2 {
+    display: block;
+    font-size: 2.1em;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+    color: #2d2d2d;
+    text-align: center;
+    padding-top: 40px;
+            }
+#gallery p {
+    width: 47%;
+    padding: 10px 0px;
+    color:#2d2d2d;
+    line-height: 1.7rem;
+    font-weight: 200;
+    display: block;
+    text-align:center;
+            }
+#gallery p:before{
+    content: "";
+    display: block;
+    border-top: 2px solid #2cb4d6;
+    width: 245px;
+    text-align: center;
+    margin: auto;
+    padding-top:7%;
 
+            }
+#gallery .right{
+    float: right;
+}
+.gallery1 {
+        width: 100%;
+        height:50%;
+        display:inline-block;
+        box-sizing: border-box;
+        margin-bottom: 5px;
+        margin-top: 15px;
+            }
+.gallery1 img {
+        width: 53%;
+        height:400px;
+        float: left; 
+        border-radius: 5px;
+            } 
+.gallery2 {
+        width: 100%;
+        height:50%;
+        display:inline-block;
+        box-sizing: border-box;
+        margin: 10px;
+            }
+.gallery2 img{
+        width: 53%;
+        height:400px;
+        float: right; 
+        border-radius: 5px;
+              } 
+.gallery3  {
+        width: 100%;
+        height:60%;
+        display: inline-block;
+        box-sizing: border-box;
+        margin: 10px;
+            }
+.gallery3 img {
+        width: 53%;
+        height:400px;
+        float: left;
+        border-radius: 5px;
+            } 
+.gallery4 {
+        width: 100%;
+        height:60%;
+        display: inline-block;
+        box-sizing: border-box;
+        margin: 5px;
+            }
+.gallery4 img{
+        width: 53%;
+        height:400px;
+        float: right;
+        border-radius: 5px;
+              } 
+.gallery5 {
+        width: 100%;
+        height:60%;
+        display: inline-block;
+        box-sizing: border-box;
+        margin-top: 5px;
+        margin-bottom: 7px;
+            }
+.gallery5 img{
+        width: 53%;
+        height:400px;
+        float: left;
+        border-radius: 5px;
+            } 
+.clear-element {
+        clear: both;
+            }
 
 /*---- Media Query ---*/
 
