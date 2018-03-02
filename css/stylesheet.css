@@ -550,7 +550,7 @@ a {
 }
 
 .jobs-eng {
-    background: url(/image/server2.jpeg) center no-repeat;
+    background: url(/image/server.jpg) center no-repeat;
     background-size: cover;
 }
 
@@ -1063,6 +1063,7 @@ a {
     
     .jobs-title {
         font-size: 50px;
+        margin-bottom: 50px;
     }
     
     .jobs-title span {
@@ -1070,16 +1071,17 @@ a {
     }
     
     .jobs-ctr {
-        height: 500px;
+        height: 800px;
+        width: 98%;
     }
     
     .jobs-ctn {
         margin: 0 auto;
-        width: 70%;
+        width: 80%;
     }
     
     .jobs-header {
-        padding: 70px 0 30px;
+        padding: 80px 0 30px;
         text-align: center;
         color: #fff;
         font-size: 60px;;
@@ -1088,12 +1090,12 @@ a {
     
     .jobs-header .txtJp {
         font-size: 35px;
-        font-weight: 200;
+        font-weight: 400;
     }
 
     .jobs-header span:before {
         width: 200px;
-        border-top: 6px solid #2cb4d6;
+        border-top: 8px solid #2cb4d6;
         margin: auto;
         margin-bottom: 10px;
     }
@@ -1101,7 +1103,7 @@ a {
     #jobs .btn { 
         position:relative;
         left: auto;
-        border: 5px solid white;
+        border: 7px solid white;
         margin: 0 auto;
         width: 275px;
         height: 90px;
