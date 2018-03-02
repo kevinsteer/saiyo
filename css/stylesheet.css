@@ -1,5 +1,7 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 
+/*---Normal CSS ---*/
+
 .section-wrapper {
     overflow: hidden;
 }
@@ -297,10 +299,6 @@ a {
     background: url(../image/entrybtnhvr.svg) no-repeat center center;
     background-size: cover;
 }
-#top {
-   padding-bottom: %; /*---background: url(../image/bg.png) no-repeat center center;
-    background-size: contain; --*/
-}
 
 .inner {
     height: 760px;
@@ -552,17 +550,17 @@ a {
 }
 
 .jobs-eng {
-    background: url(/image/server2.jpeg) center no-repeat;
+    background: url(/image/server2sml.jpg) center center no-repeat;
     background-size: cover;
 }
 
 .jobs-web{
-    background: url(/image/mtg.jpg) center no-repeat;
+    background: url(/image/mtg.jpg) center center no-repeat;
     background-size: cover;
 }
 
 .jobs-oth {
-    background: url(/image/fax.jpg) center no-repeat;
+    background: url(/image/fax.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -589,8 +587,7 @@ a {
     display: block;
     font-size: 14px;
     font-weight: 300;
-    position: relative;
-    line-height: 
+    position: relative; 
 }
 
 .jobs-header span:before {
@@ -1014,3 +1011,335 @@ a {
 .clear-element {
         clear: both;
             }
+
+/*---- Media Query ---*/
+
+.phone {
+    display: none;
+}
+
+@media only screen and (min-device-width:320px) and (max-device-width: 440px) and (orientation: portrait){
+    
+    .menu-inner {
+        display: none !important;
+    }
+    
+    .phone {
+        display: block;
+    }
+    
+    .dropbtn {
+        float: left;
+        margin-left: 50%;
+        width: 10%;
+        font-size: 110%;
+        z-index: -2;
+        padding: 0 auto;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 98px;
+        line-height: 700%;
+        font-size: 180%;
+        width: 980px;
+        background-color: #f7f7f7;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        z-index: 2;
+        align-content: center;
+    }
+    
+    .dropdown-content a{
+        text-align: center;
+        color: black;
+        text-decoration: none;
+        display: block;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+    }
+    
+    .dropdown a:hover {
+        background-color: #ddd;
+    }
+    
+    .show {
+        display: block;
+        animation-name: fadeIn;
+        animation-duration: .5s;
+    }
+    
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            line-height: 0%;
+        }
+        100% {
+            opacity: 1;
+            line-height: 700%;
+        }
+    }
+    
+    .menu-wrapper{
+        background: white;
+        position: fixed;
+        width: 100%;
+        z-index: 2;
+        line-height: 500%;
+        box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.3);
+    }
+    
+    .menu-wrapper ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+        background-color: #fff;
+    }
+    
+    #myDropdown {
+        margin-top: 20px;
+    }
+    
+    .menu-wrapper .logo {
+        display: block;
+        float: left;
+        font-size: 2em;
+        padding: 10px 20px;
+        text-decoration: none;
+    }
+    
+    #top {
+        height: 1000px;
+        margin-bottom: 100px;
+    }
+    
+    .SwayC1 {
+        top: 8.5%;
+        width: 4%;
+    }
+    
+    .SwayL1 {
+        top: 14%;
+        width: 50px;
+    }
+    
+    .SwayR1 {
+        top: 17%;
+        width: 5%;
+    }
+    
+    .catchcopy {
+        padding-top: 55%;
+    }
+    
+    #scroll {
+        display: none;
+    }
+    
+    .newsreel {
+        width: 100%;
+        display: block;
+        position:inherit;
+    }
+    
+    .newsheader {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        font-size: 4em;
+        margin-bottom: 20px;
+    }
+    
+    .news-item {
+        display: flex;
+        margin: 0 auto;
+        font-size: 2em;
+        height: 100px;
+    }
+    
+    .newsdate {
+        width: 100px;
+        height:auto;
+        font-size: 26px
+    }
+    
+    .newsitem-text {
+        font-size: 40px;
+        font-weight: 300;
+    }
+    
+    .pm-title {
+        font-size: 50px;
+    }
+    
+    .pm-title span {
+        font-size: 40px;
+    }
+    
+    .pm-title span::before {
+        width: 300px;
+        border-top: 6px solid #2cb4d6;
+    }
+    
+    .msg-ctn{
+        font-size: 35px;
+        line-height: 1.4em;
+        font-weight: 200;
+        letter-spacing: .1em;
+        text-indent: 100px
+    }
+    
+    .jobs-title {
+        font-size: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .jobs-title span {
+        font-size: 35px;
+    }
+    
+    .jobs-title span:before {
+        width: 200px;
+        border-top: 6px solid #2cb4d6;
+    }
+    
+    .jobs-ctr {
+        height: 800px;
+        width: 98%;
+    }
+    
+    .jobs-ctn {
+        margin: 0 auto;
+        width: 80%;
+    }
+    
+    .jobs-header {
+        padding: 80px 0 30px;
+        text-align: center;
+        color: #fff;
+        font-size: 60px;;
+        float: none;
+    }
+    
+    .jobs-header .txtJp {
+        font-size: 35px;
+        font-weight: 400;
+    }
+
+    .jobs-header span:before {
+        width: 200px;
+        border-top: 8px solid #2cb4d6;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    #jobs .btn { 
+        position:relative;
+        left: auto;
+        border: 7px solid white;
+        margin: 0 auto;
+        width: 275px;
+        height: 90px;
+        background-position: center center;
+        background-size: 275px auto;
+    }
+    
+    #jobs .btn:hover {
+        background: url(/image/btn_test_normalx4.png) center center;
+        background-size: 275px auto;
+    }
+    
+    .flow-title {
+        font-size: 60px;
+    }
+
+    .flow-title span::before {
+        border-top: 6px solid #2cb4d6;
+        width: 200px;
+    }   
+
+    .flow-title span {
+        display: block;
+        font-weight: 300;
+        font-size: 40px;
+        margin-top: 10px;
+    }
+    
+    .flow-bg {
+        background: url(/image/FLOWmbl.png) center center no-repeat;
+        background-size: contain;
+        height: 1500px;
+    }
+    
+    .flow-text {
+        font-size: 35px;
+        line-height: 1.4em;
+        font-weight: 200;
+        letter-spacing: .1em;
+    }
+
+    .flow-text::before {
+        border-top: 6px solid #2cb4d6;
+        margin:auto;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    
+    .entry-wrapper {
+        height: 900px;
+    }
+    
+    .entry-title {
+        font-size: 60px;
+    }
+
+    .entry-title span::before {
+        border-top: 6px solid #2cb4d6;
+        width: 500px;
+    }
+
+    .entry-title span {
+        font-weight: 200;
+        font-size: 35px;
+    }
+    
+    .WTDLYbutton {
+        width: 800px;
+        height: 200px;
+        margin: 50px auto 0;
+    }
+
+    .WTDLYbutton:hover {
+        background: #60defd;
+    }
+
+    .btn-ctn {
+        font-size: 60px;
+        font-weight: 300;
+    }
+    
+    .access-wrapper {
+    height:1000px;
+    }
+
+    .access-title-wrap {
+        height: 250px;
+    }
+
+    .access-title {
+        padding-right: 22px;
+        font-size: 40px;
+    }
+
+    .access-title .txtJp:before {
+        border-left: 6px solid #2cb4d6;
+        height: 45px;
+    }   
+
+    .access-title .txtJp {
+        font-size: 45px;
+    }
+}
