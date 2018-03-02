@@ -550,17 +550,17 @@ a {
 }
 
 .jobs-eng {
-    background: url(/image/server.jpg) center no-repeat;
+    background: url(/image/server2sml.jpg) center center no-repeat;
     background-size: cover;
 }
 
 .jobs-web{
-    background: url(/image/mtg.jpg) center no-repeat;
+    background: url(/image/mtg.jpg) center center no-repeat;
     background-size: cover;
 }
 
 .jobs-oth {
-    background: url(/image/fax.jpg) center no-repeat;
+    background: url(/image/fax.jpg) center center no-repeat;
     background-size: cover;
 }
 
