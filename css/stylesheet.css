@@ -4,13 +4,119 @@
     overflow: hidden;
 }
 
+.hotair {
+    -webkit-animation-name: balloon;
+    -webkit-animation-duration: 7s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-name: balloon;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.blue {
+    -webkit-animation-delay: .12s;
+    -webkit-animation-duration: 6s;
+    animation-delay: .12s;
+    animation-duration: 6s;
+}
+
+.red {
+    -webkit-animation-delay: .24s;
+    -webkit-animation-duration: 8s;
+    -webkit-animation-direction: alternate;
+    animation-delay: .24s;
+    animation-duration: 8s;
+    animation-direction: alternate;
+}
+
+.color {
+    -webkit-animation-delay: .8s;
+    -webkit-animation-duration: 9s;
+    animation-delay: .8s;
+    animation-duration: 9s;
+}
+
+@keyframes balloon {
+    0% {
+        transform: translate(0, 0)
+    }
+    50% {
+        transform: translate(0, 20px);
+    }
+    
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
 #scroll {
     height: 70px;
     position: absolute;
     display: inline;
+    margin: 0 auto;
+    top: 680px;
     left: 50%;
-    top: 495px; 
 }
+
+#scroll img {
+    width: 34px;
+    display: block;
+    margin: 10px auto;
+}
+
+.scroll-mouse {
+    -webkit-animation-delay: .5s;
+    -webkit-animation-name: scrollmouse;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease;
+    animation-delay: .5s;
+    animation-name: scrollmouse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease;
+}
+
+.scrolltext {
+    -webkit-animation-name: scrolltext;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease;
+    animation-name: scrolltext;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease;
+}
+
+
+@keyframes scrollmouse {
+    0%{
+        transform: translate(0, 0);
+    }
+    
+    50% {
+        transform: translate(0, -7px);
+    }
+    
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes scrolltext {
+    0%{
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(0, -6px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
 .scroll-text {
     margin: 0;
     padding: 0;
@@ -174,6 +280,7 @@ a {
     height: 60px;
     text-align: center;
     background: url(../image/entrybtn.svg) no-repeat center center;
+    background-size: cover;
     overflow: hidden;
     white-space: nowrap;
     transition: 0.4s 0s ease;
@@ -188,6 +295,7 @@ a {
 
 .button-top:hover {
     background: url(../image/entrybtnhvr.svg) no-repeat center center;
+    background-size: cover;
 }
 #top {
    padding-bottom: %; /*---background: url(../image/bg.png) no-repeat center center;
@@ -211,6 +319,9 @@ a {
     width: 56%;
     margin: 0 auto;
 }
+
+/*-- Animation -*/
+
 .float {
     margin: 0;
     z-index: -1;
@@ -247,6 +358,33 @@ a {
     height: 9%;
     z-index: -1;
 }
+
+.city {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 500px;
+}
+
+.Line1 {
+    width: 100%;
+    background: #2a2a2a;
+    height: 2px;
+    z-index: 1;
+    display: block;
+    position: relative;
+}
+
+.Rise1 {
+    display: block;
+    position: relative;
+    background: url(/image/city-01.svg) no-repeat center bottom;
+    width: 100%;
+    height: 140px;
+    
+}
+
+/*---News Section --*/
 
 .newsreel {
     position: absolute;
@@ -333,61 +471,139 @@ a {
 
 /* PM Message */
 #PM {
-    margin: 75px 0px;
+    margin-top: 75px;
+    height: 100%;
+    background: #2d2d2d;
+    text-align: center;
+    padding-top: 70px;
 }
 
-.right-line {
-			max-width: 3%;
-			border-bottom:
-			inset 5px #ffffff;
-			position:relative;
-		}
+.pm-wrapper {
+    width: 850px;
+    margin: 0 auto;
+}
 
-.left-line {
-			max-width:
-			300px;
-			border-bottom:
-			inset 5px #ffffff;
-			position:relative;
-			top:70px;
-		}
+.pm-title {
+    font-size: 1.8rem;
+    color: #fff;
+}
 
-	
-		.img-max {
-		width: 100%;
-		padding-left: 0%;
-        }
+.pm-title span::before {
+    content: "";
+    display: block;
+    border-top: 2px solid #2cb4d6;
+    width: 120px;
+    margin: auto;
+    margin-bottom: 5px;
+}
 
-				ul.sample_menu {
-		display:-webkit-flex;
-		display:flex;
-		position: relative;
-		top: 50%;
-		flex-wrap:wrap-reverse;
-		width:100%;
-		list-style-type:none;
-		margin:0; padding:0;
-		}
-		/* 白線がよくわからない end 20180213hayashi */
+.pm-title span {
+    display: block;
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin: 5px 0 10px;
+}
+
+.msg-ctn {
+    padding: 10px 0px;
+    color: white;
+    text-align: left;
+    line-height: 1.7rem;
+    font-weight: 200;
+    display: block;
+}
+
+.pm-name {
+    text-align: right;
+    font-weight: 500;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    letter-spacing: .1em;
+    margin: 30px
+}
 
 /*---- Job Types ---*/
 
 #jobs {
-    width: 100%;
-    padding-top: 60px;
-    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.jobs-title {
+    font-size: 1.8rem;
+    color: #2d2d2d;
+}
+
+.jobs-title span::before {
+    content: "";
+    display: block;
+    border-top: 2px solid #2cb4d6;
+    width: 60px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.jobs-title span {
+    display: block;
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.jobs-eng {
+    background: url(/image/server2.jpeg) center no-repeat;
+    background-size: cover;
+}
+
+.jobs-web{
+    background: url(/image/mtg.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.jobs-oth {
+    background: url(/image/fax.jpg) center no-repeat;
+    background-size: cover;
 }
 
 .jobs-ctr {
-    background: #60defc;
     margin: 30px auto;
-    width: 800px;
+    width: 850px;
     height: 250px;
-    border: 2px solid;
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.2);
 }
+
+.jobs-header {
+    padding: 10px 20px 20px;
+    display: block;
+    text-align: left;
+    color: #fff;
+    font-size: 1.6rem;
+    display: block;
+    float: left;
+}
+
+.jobs-header .txtJp {
+    font-family: 'Noto Sans Japanese';
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    position: relative;
+    line-height: 
+}
+
+.jobs-header span:before {
+    content: "";
+    display: block;
+    border-top: 2px solid #2cb4d6;
+    width: 225px;
+    margin: 3px 0;
+}
+
 #jobs .btn { 
-    position:relative;top:40%;
-    position:relative;left:65%;
+    position:absolute;top:40%;
+    position:absolute;left:70%;
 }
 
 /*----- Workplace Culture --*/
@@ -437,6 +653,28 @@ a {
     border: 3px solid;
     border-color: rgba(255,255,255,1);
     border-radius: 5px;
+}
+
+.workplace-title-contents .txtJp::before {
+    content: "";
+    display: block;
+    border-top: 2px solid #2cb4d6;
+    width: 100px;
+    margin: auto;
+}
+
+.workplace-title-contents .txtJp {
+    display: block;
+    font-family: 'Noto Sans Japanese';
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+ .middleplus {
+    /*-- color: #2cb4d6; --*/
+    font-weight: 100;
+    font-size: 30px;
 }
 
 #workplace .btn-wrapper {
@@ -493,6 +731,7 @@ a {
     line-height: 1.5rem;
     font-weight: 300;
     display: block;
+    color: #2d2d2d;
 }
 
 .flow-text::before {
@@ -510,8 +749,8 @@ a {
 #entry::before { 
   display: block; 
   content: " "; 
-  margin-top: -70px; 
-  height: 70px; 
+  margin-top: -50px; 
+  height: 50px; 
   visibility: hidden; 
 }
 
@@ -581,25 +820,67 @@ a {
 }
 
 /*----- access --*/
-#access {
-        width:100%;
-        height:470px;
-        display: inline-block;
-        box-sizing: border-box;
-        background-color: darkorange;   
-        position:relative;
+.access-wrapper {
+    width:100%;
+    height:525px;
 }
 
-#access h1{
-        font-family:serif;
-        color: white;
-        margin: auto;
-        font-style: bold;
-        font-size: 300%;
-        text-align: center;
+.access-title-wrap {
+    width: 100%;
+    height: 100px;
+    background: rgba(0,0,0,0.6);
+    margin: 0 auto;
+    position: absolute;
+    z-index: 1;
+    padding: 10px 0;
+    text-align: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: columm;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    justify-content: center;
 }
+
+.access-title {
+    color: white;
+    margin: 0 auto;
+    padding-right: 22px
+}
+
+.access-title .txtJp:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    border-left: 2px solid #2cb4d6;
+    margin: 0 20px;
+    height: 30px;
+}
+
+.access-title .txtJp {
+    margin-top: -2px;
+    display: block;
+    float: left;
+    font-weight: 200;
+    font-family: 'Noto Sans Japanese';
+    vertical-align: middle;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.access-title .txtEn {
+    display: block;
+    float: left;
+    line-height: 30px;
+}
+
 #map{
-        width:100%;
-        height:100%;
-        position: relative; 
+    width:100%;
+    height:100%;
+    position: relative; 
 }
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------- Workplace Page ---------------------------------------------------------------------*/
+
+
