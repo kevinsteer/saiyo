@@ -193,8 +193,8 @@
     
     .jobtype {
         background: url(/image/seng_mob.jpg) no-repeat center top fixed;
-        -webkit-background-size: cover;    
-        background-size: cover; 
+        -webkit-background-size: contain;    
+        background-size: contain; 
     }
     
     .title-box {
