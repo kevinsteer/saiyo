@@ -192,7 +192,7 @@
 @media only screen and (min-device-width:320px) and (max-device-width: 440px) and (orientation: portrait){
     
     .jobtype {
-     background: url(/image/seng_mob.jpg) no-repeat center bottom fixed;
+     background: url(/image/seng_mob.jpg) no-repeat center top fixed;
      background-size: contain;    
     }
     
