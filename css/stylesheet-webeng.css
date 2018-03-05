@@ -8,6 +8,6 @@ body {
     
     body {
      background: url(/image/weng_mob.jpg) no-repeat center top fixed;
-     background-size: cover;    
+     background-size: contain;    
     }
 }
