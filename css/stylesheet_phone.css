@@ -39,331 +39,18 @@ a {
     
 }
 
-.menu-wrapper {
-    width: 100%;
-    position: fixed;
-    min-width: 1280px;
-    top: 10px;
-    left: 0;
-    z-index: 5;
-}
-
-.menu-header {
-    display: table;
-    width: 100%;
-    vertical-align: middle;
-    background-color: white;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.08);
-}
-
-.menu-inner {
-    display: table;
-    width: 100%;
-    height: 60px;
-    text-align: center;
-}
-
-.logo {
-    display: table-cell;
-    width: 150px;
-    text-indent: -9999px;
-    background: url(../image/logo.svg) no-repeat center center;
-    background-size: auto 85%;
-    vertical-align: middle;
-}
-
-.logo a {
-    display: block;
-    height: 100%;
-    width: 100%;
-}
-
-.Li {
-    display: table-cell;
-    vertical-align: middle;
-    padding-left: 200px;
-}
-
-.Li-GlobalMenu {
-    float: left;
-    margin-right: 35px;
-}
-
-.Li-GlobalMenu a {
-    font-weight: 700;
-    color: #111;
-    transition: 0.3s 0s ease;
-    transition-property: opacity;
-}
-
-.Li-GlobalMenu a:hover {
-    opacity: .6;
-}
-
-.Li-GlobalMenu:not(:first-child) {
-    margin-left: 40px;
-}
-
-.menu-Ebutton {
-    position: relative;
-    float: right;
-    
-}
-
-.button-top {
-    display: table;
-    width: 140px;
-    height: 60px;
-    text-align: center;
-    background: url(../image/entrybtn.svg) no-repeat center center;
-    overflow: hidden;
-    white-space: nowrap;
-    transition: 0.4s 0s ease;
-    transition-property: background;
-}
-
-.button-top span {
-    display: table-cell;
-    vertical-align: middle;
-    color: #fff;
-}
-
-.button-top:hover {
-    background: url(../image/entrybtnhvr.svg) no-repeat center center;
-}
-#top {
-   padding-bottom: %; /*---background: url(../image/bg.png) no-repeat center center;
-    background-size: contain; --*/
-}
-
-.inner {
-    height: 760px;
-}
-
-.title-top {
-    width: auto;
-    text-indent: -999px;
-}
-
-.catchcopy {
-    display: block;
-    background: url(../image/catchcopy.svg) no-repeat;
-    background-position: center;
-    padding-top: 29%;
-    width: 56%;
-    margin: 0 auto;
-}
-.float {
-    margin: 0;
-    z-index: -1;
-    position: absolute;
-}
-.SwayC1 {
-    position: absolute;
-    background: url(../image/balloonrd.svg) no-repeat;
-    left: 44%;
-    top: 80px;
-    width: 5%;
-    height: 5%;
-    z-index: -1;
-}
-
-.SwayL1 {
-    position: absolute;
-    background: url(../image/balloonbl.svg) no-repeat center center;
-    top: 47%;
-    left: 13%;
-    /*--- value 35px --*/
-    width: 8%;
-    height: 8%;
-    z-index: -1;
-}
-
-.SwayR1 {
-    position: absolute;
-    background: url(../image/balloonclr.svg) no-repeat center center;
-    top: 27%;
-    right: 9%;
-    /*--- value 35px --*/
-    width: 9%;
-    height: 9%;
-    z-index: -1;
-}
-
-.newsreel {
-    position: absolute;
-    top: 674px;
-}
-
-.newsheader {
-    position: relative;
-    margin: 1% 0 0;
-    width: 100%;
-    border-bottom: 1px solid;
-    border-bottom-color: black;
-}
-
-.newsheader-font {
-    margin: 0 auto 0 20px;
-    font-weight: 700;
-}
-.news {
-    display: block;
-    position: relative;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    min-width: 34%;
-}
-
-.news-item {
-    font-family: "Noto Sans Japanese", sans-serif;
-    font-weight: 200;
-    display: flex;
-    align-items: center;
-    height: 30px;
-    background: rgba(44,180,214,0);
-    transition: 0.4s 0s ease;
-    transition-property: background;
-    border-bottom: 1px solid;
-    border-bottom-color: rgba(204,204,204,.4);
-}
-
-.news-item:hover {
-    background: rgba(44,180,214,0.2);
-    cursor: pointer;
-}
-
-.news-item a {
-    display: flex;
-    align-items: center;
-    margin: 0;
-    font-size: 0.9em;
-    font-weight: 200;
-}
-
-.newsitem-meta {
-    font-weight: 400;
-    display: flex;
-    align-items: center;
-}
-
-.newsdate {
-    display: inline-block;
-    letter-spacing: normal;
-    padding: 0 10px 0 20px;
-}
-
-.newstag {
-    min-width: 65px;
-    background: #2cb4d6;
-    border-radius: 4px;
-    color: #fff;
-    margin: 10px;
-    padding: 2px;
-    line-height: 1.4;
-    text-align: center;
-    font-size: .8em;
-    
-}
-
-.newsitem-text {
-    padding: 0px 12px;
-    font-size: 13px
-}
-
-/* >>>>>>FIX 白線がよくわからない start 20180213hayashi */
-#PM {
-    margin: 75px 0px;
-}
-
-.right-line {
-			max-width: 3%;
-			border-bottom:
-			inset 5px #ffffff;
-			position:relative;
-		}
-
-.left-line {
-			max-width:
-			300px;
-			border-bottom:
-			inset 5px #ffffff;
-			position:relative;
-			top:70px;
-		}
-
-	
-		.img-max {
-		width: 100%;
-		padding-left: 0%;
-        }
-
-				ul.sample_menu {
-		display:-webkit-flex;
-		display:flex;
-		position: relative;
-		top: 50%;
-		flex-wrap:wrap-reverse;
-		width:100%;
-		list-style-type:none;
-		margin:0; 
-        padding:0;
-		}
-
-div.phone {
-    display: none;
-}
-span.phone {
-    display: none;
-}
-
-		/* 白線がよくわからない end 20180213hayashi */
-
-@keyframes fadeIn {
-    0% {
-        opacity:0;
-        line-height: 0%;
-    }
-    }
-    100% {
-        opacity:1;
-        line-height: 500%;
-    }
-}
-
-
-
-
-/*
-responsive web design
-
-*/
-
-/* Smartphones (portrait and landscape) ----------- */
-
 
 /* Samsung Galaxy S5 ----------- */
 @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
-
-    
-/* Styles */
 }
+
+
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 440px) and (orientation : portrait) {
 
-div.browser {
-    display: none !important;
-    }
-time.browser {
-    display: none !important;
-    }    
-div.phone {
-    display: block;  
-}  
-span.phone {
-    display: block;
-}    
+    .menu-wrapper {
+        display: none !important;
+    } 
     .dropbtn {
         float: left;
         margin-left: 50%;
@@ -375,9 +62,6 @@ span.phone {
         padding-top: 0;
     }    
     
-.dropdown {
-   
-}
 
 .dropdown-content {
     display: none;
@@ -410,6 +94,17 @@ span.phone {
       animation-name: fadeIn;
       animation-duration: .5s;
       
+    }
+    
+@keyframes fadeIn {
+    0% {
+        opacity:0;
+        line-height: 0%;
+    }
+    }
+    100% {
+        opacity:1;
+        line-height: 500%;
     }    
     
 .SwayC1 {
@@ -453,38 +148,7 @@ span.phone {
     margin: 0 auto;
 }
     
-    
-    
-/* Styles */
-  .header {
-  background-color: #fff;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-  position: fixed;
-      
-  width: 100%;
-  z-index: 3;
-  line-height: 500%; 
-}
 
-.header ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  overflow: hidden;
-  background-color: #fff;
-}
-
-    #myDropdown {
-        margin-top: 20px;
-    }
-
-.header .logo {
-  display: block;
-  float: left;
-  font-size: 2em;
-  padding: 10px 20px;
-  text-decoration: none;
-}
 
     
 .newsheader {
