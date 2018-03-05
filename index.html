@@ -4,25 +4,44 @@
 <link href="../js/dist/aos.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">    
 <link rel="stylesheet" href="css/stylesheet.css">
-    <title>S2 RECRUIT 2019</title>
+<link rel="stylesheet" href="css/hamburgers.css">    
+    <title>株式会社エスツー 新卒採用 2019</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
-<body onload="initialize();">
-<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-<script>AOS.init();</script>
-    <header class="menu-wrapper">
-      <div class="menu-header">
-        <div class="menu-inner">
+<body>
+<script type="text/javascript" src="/js/common.js"></script>
+    <header class="menu-wrapper clearfix">
+      <div class="menu-header clearfix">
+        <div class="menu-inner clearfix">
             <h1 class="logo"><a href="">S2</a></h1>
           <nav class="Li">
-            <li class="Li-GlobalMenu"><a href="#PM"><span>MESSAGE</span></a></li>
-            <li class="Li-GlobalMenu"><a href="#jobs"><span>JOB</span></a></li>
-            <li class="Li-GlobalMenu"><a href="#workplace"><span>WORKPLACE</span></a></li>
-            <li class="Li-GlobalMenu"><a href="#flow"><span>FLOW</span></a></li>  
-            </nav>
-          <div class="menu-Ebutton">
+            <ul class="gnav">  
+                <li class="gnav-li clearfix"><a href="#PM" class="gnav-hover">MESSAGE</a></li>
+                <li class="gnav-li clearfix"><a href="#jobs" class="gnav-hover">JOBS</a></li>
+                <li class="gnav-li clearfix"><a href="#workplace" class="gnav-hover">WORKPLACE</a></li>
+                <li class="gnav-li clearfix"><a href="#flow" class="gnav-hover">FLOW</a></li>
+            </ul>    
+          </nav>
+          <div class="menu-Ebutton clearfix">
               <a href="#entry" class="button-top"><span>ENTRY</span></a>
             </div>    
           </div>
+        </div>
+<!----- Phone Dropdown --->        
+        <div class="dropdown phone">
+            <a href="/" class="logo">S2</a> 
+            <button onclick="myFunction()" id="target_drp" class="dropbtn hamburger hamburger--squeeze" type="button">
+                <div  class="hamburger-box">
+                    <span  class="hamburger-inner"></span>
+                </div>
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+                <a id="drop1" href="#PM" onclick="document.getElementById('target_drp').click()">MESSAGE</a>
+                <a id="drop2" href="#jobs" onclick="document.getElementById('target_drp').click()">JOBS</a>
+                <a id="drop3" href="#workplace" onclick="document.getElementById('target_drp').click()">WORKPLACE</a>
+                <a id="drop4" href="#flow" onclick="document.getElementById('target_drp').click()">FLOW</a>
+                <a id="drop5" href="#entry" onclick="document.getElementById('target_drp').click()">ENTRY</a>
+            </div>
         </div>
     </header>
     <section class="section-wrapper">
@@ -36,13 +55,15 @@
                 <h3>Recruit</h3>
                 <h4>2019</h4>
                 </div>
+                <div class="city">
+                    <p class="obj float Rise1"><p class="obj float Line1"></p></p> 
+                </div>
             </div>
             <!----SVG IMAGES GO HERE---->
-            <p class="obj float SwayL1"></p>
-            <p class="obj float SwayC1"></p>
-            <p class="obj float SwayR1"></p>
-            <p class="obj float Line1"></p>
-            <p class="obj float Rise1"></p>
+            <p class="obj float SwayL1 hotair blue"></p>
+            <p class="obj float SwayC1 hotair red"></p>
+            <p class="obj float SwayR1 hotair color"></p>
+            
     <!---- News ---->
             <div class="newsreel">
             <div class="newsheader">
@@ -86,54 +107,64 @@
             </div>    
              <!---- Scroll ---->
             <div class="scroll" id="scroll">
-              <p class="scroll-text">Scroll</p>    
-              <img src="image/#" alt class="scroll-mouse">
+              <p class="scroll-text scrolltext">Scroll</p>    
+              <img src="image/scroll.svg" alt class="scroll-mouse">
             </div>
         </div>
     </section>
     <section id="PM">
-		<div class="PM-line">
-			<ul class="sample_menu" style="flex-flow:row nowrap;">
-			<li style="flex-basis:50%; border-bottom: medium solid #ff00ff;"></li>
-			<li style="flex-basis:30%;"></li>
-			<li style="flex-basis:50%; border-bottom: medium solid #ff00ff;"></li>
-			</ul>
-		</div>
-        <img class="img-max" src="/image/sample1.png" />
-        <p class="PM-title"><h2>presidents</h2>message</p>
-        <p class="PM-content">これはテストメッセージです。これはテストメッセージです。
-				<br> これはテストメッセージです。これはテストメッセージです。
-				<br> これはテストメッセージです。これはテストメッセージです。
-				<br> これはテストメッセージです。これはテストメッセージです。
-				<br> これはテストメッセージです。これはテストメッセージです。
-				<br> これはテストメッセージです。これはテストメッセージです。
-				<br> これはテストメッセージです。これはテストメッセージです。
-				<br> これはテストメッセージです。これはテストメッセージです。
-				<br>
-			</p>
-        <img class="alignleft" src="image/Silueta.png">
+        <div class="pm-wrapper">
+            <div class="pm-title">
+                <h2>PRESIDENTS MESSAGE<span>社長からのメッセージ</span></h2>
+            </div>
+            <div class="msg-ctn" data-aos="fade" data-aos-once="true" data-aos-offset="300" aos-data-delay="300">
+                <p class="msg-contents">ソフトウェアエンジニア三大美徳の一つである「怠惰」を拡大解釈（という名の曲解）した私は、FreakOut を始める 10 年ほど前から、米国の片田舎で「自動でお金を稼ぐソフトウェア」の開発に躍起になっていた時期があり、サーバーの電源スイッチを入れるだけで数ヶ月後には銀行口座に振込がされ、サーバー台数を増やすだけで振込金額があがっているようなものを目指していました。
+夢のような話ではありますが、結果として一定の成果を残せたものの、本格的な起業へ向けてこのプロジェクトは幕を閉じることとなります。このことを通して学んだのは、いくら自動化がなされても、人の仕事はそれほど楽にはならないということでした。 ある部分をソフトウェアに任せれば、より高度なことを人間がやるようになり、その高度であったはずのことも、徐々にソフトウェアに任せることになる。この繰り返しでしかなかったのです。
+                    <br> 
+                    <br>
+                    「人に人らしい仕事を」と社のミッションを定めたFreakOutですが、私の頭にはいつもこの起業前の原体験が会社の目指すものと重なって映ります。
+つまりは、怠惰であらんとすることは、文明を推進させるための人の営みのようなものでしかなく、そう考えれば、歴史もその積み重ねでしかないのではないかと。
+このように考えてみると、我々がやるべきことも極めてシンプルです。歴史や文明がそうしてきたように、人が少しでも楽できるよう、コンピュータによって仕事の効率を上げていけばよいだけです。どうせ人は楽などせず、より高度な仕事を見つけ出すのですから。 楽をしようと思った人間が、より高度な仕事をすることになることを、皮肉と思われるかもしれませんが、私は楽観と考えています。
+なぜなら、どんなにコンピュータによる自動化が進んでも、そこに新たな仕事を見つけ出す能力を人が備えていることに対し、私は楽観的であるからです。
+</p>
+                <p class="pm-name">代表取締役社長 CEO<br>須藤 晃平</p>    
+            </div>
+            <div class="pm-image"></div>
+        </div>    
     </section>
     <section id="jobs">
         <div class="jobs-wrapper">
-            <div class="jobs-eng jobs-ctr">
-                <h2 class="jobs-header jobs-left">SERVER ENGINEER</h2>
-                <p class="jobs-ctn jobs-left"></p>
-                <div class="btn1">
-                    <a class="a1"href="/">more</a>
+            <div class="jobs-title">
+                <h2>WHAT WE DO<span>事業紹介</span></h2>
+            </div>
+            <div class="jobs-eng jobs-ctr" data-aos="fade-left" data-aos-offset="200" data-aos-once="true">
+                <div class="jobs-ctn clearfix">
+                    <h2 class="jobs-header">SERVER ENGINEER
+                        <span class="txtJp">サーバーエンジニア</span></h2>
+                    <p class="jobs-desc"></p>
+                    <div class="btn">
+                        <a class="a" href="/server_engineer.html">more</a>
+                    </div>
+                </div>    
+            </div>
+            <div class="jobs-web jobs-ctr" data-aos="fade-right" data-aos-offset="200" data-aos-once="true">
+                <div class="jobs-ctn clearfix">
+                    <h2 class="jobs-header">WEB APPLICATION ENGINEER
+                        <span class="txtJp">WEBアプリケーションエンジニア</span></h2>
+                    <p class="jobs-desc"></p>
+                    <div class="btn">
+                        <a class="a" href="/web_engineer.html">more</a>
+                    </div>
                 </div>
             </div>
-            <div class="jobs-web jobs-ctr">
-                <h2 class="jobs-header  jobs-left">WEB ENGINEER</h2>
-                <p class="jobs-ctn jobs-left">HAHAHAHAHAHAHA</p>
-                <div class="btn2">
-                    <a class="a2"href="/">more</a>
-                </div>
-            </div>
-            <div class="jobs-oth jobs-ctr">
-                <h2 class="jobs-header  jobs-left">Other Jobs</h2>  
-                <a href="../jobtype.html">more</a>
-                <div class="btn3">
-                    <a class="a3"href="/">more</a>
+            <div class="jobs-oth jobs-ctr" data-aos="fade-left" data-aos-offset="200" data-aos-once="true">
+                <div class="jobs-ctn clearfix">
+                    <h2 class="jobs-header">GENERAL
+                        <span class="txtJp">総合職</span></h2>
+                    <p class="jobs-desc"></p>
+                    <div class="btn">
+                        <a class="a" href="/general.html">more</a>
+                    </div>
                 </div>  
             </div>    
         </div>
@@ -141,41 +172,56 @@
     <section id="workplace">
         <div class="workplace-wrapper" id="triggerwork">
             <div class="workplace-title-wrapper">
-                    <div class="btn-workplace-contents" data-aos="fade-left" data-aos-anchor="#triggerwork" data-aos-anchor-placement="top-center">
-                    <a href="../jobtype.html">more</a>
+                <div class="btn-wrapper" data-aos="fade-left" data-aos-anchor="#triggerwork" data-aos-anchor-placement="top-center" data-aos-once="true">
+                    <div class="btn">
+                        <a href="../wkpcul5.html">more</a>
                     </div>
-                    <div class="workplace-title-contents" data-aos="fade-right" data-aos-anchor="#triggerwork" data-aos-anchor-placement="top-center">
-                    <span class="workplace-left"> WORKPLACE <br/>
-                            +<br/>
-                        CULTURE</span> 
-<<<<<<< HEAD
-                </div>
-                ^^
-=======
                 </div>    
->>>>>>> 6e23ebd3e74fd09a71ac5b6ecbdb8c7752189d21
+                <div class="workplace-title-contents" data-aos="fade-right" data-aos-anchor="#triggerwork" data-aos-anchor-placement="top-center" data-aos-once="true">
+                    <span class="workplace-left"> WORKPLACE <br/>
+                        <span class="middleplus">＋</span>
+                        CULTURE</span>
+                    <span class="txtJp">オフィスの雰囲気</span>
+                </div>
             </div>
         </div>
     </section>    
     <section id="flow">
-			<div class="flow-wrapper">
-				<img class="img-max" src="image/sampleFlow.png">
+        <div class="flow-wrapper">
+            <div class="flow-title">
+                <h2>RECRUIT FLOW<span>選考のながれ</span></h2>
+            </div>
+			<div class="flow-bg" data-aos="fade" data-aos-once="true" data-aos-offset="300" aos-data-delay="300">
 			</div>
+            <p class="flow-text">弊社の新卒採用で２つのながれがあります。説明会に応募したいコースを選べます。まずは下記エントリーボタンより、エントリをお願いいたします。</p>
+        </div>
     </section>    
     <section id="entry">
-        <div class="inner">
+        <div class="entry-wrapper">
+            <div class="entry-title">
+                <h2>ENTRY<span>WANTEDLYエントリーフォームにリンクします。</span></h2>
+            </div>
             <div class="WTDLYbutton">
-                <a href="#wantedly" class="button-wantedly"><span>Wantedlyへエントリー</span></a>
+                <a href="https://www.wantedly.com/" target="_blank" class="btn-ctn"><span>インターンへ応募する</span></a>
+            </div>
+            <div class="WTDLYbutton">
+                <a href="https://www.wantedly.com/" target="_blank" class="btn-ctn"><span>一般へ応募する</span></a>
             </div>
         </div>
     </section>  
     <section id="access">
-        <h1>Access</h1>
+        <div class="access-wrapper">
+        <div class="access-title-wrap">
+            <div class="access-title clearfix">
+                <h2><span class="txtEn">ACCESS</span><span class="txtJp">アクセス</span></h2>
+            </div>
+        </div>    
          <div id="map"></div>
          <script type="text/javascript">
 	var loadedGoogleMap = function(){
 		function initialize() {
 			var myLatlng = {lat: 39.7161102, lng: 140.1204176}; //マーカーの位置（＝所在地）
+            var myLatlng2 = {lat: 39.716847, lng: 140.122046};//centerの位置（＝所在地
             
             var styles = [
 				{
@@ -190,7 +236,7 @@
 				}
 			];
 			var mapOptions = {
-				center: myLatlng,
+				center: myLatlng2,
 				zoom: 17,
                 styles: styles, 
 			};
@@ -206,11 +252,66 @@
 		google.maps.event.addDomListener(window, 'load', initialize);
 	};
 </script>
-<script async defer src="//maps.googleapis.com/maps/api/js?key=AIzaSyBr4lqQ_z1DmjsgX7zqfwNZFT5Mkxrdrh8
+<script async defer src="//maps.googleapis.com/maps/api/js?language=ja&key=AIzaSyBr4lqQ_z1DmjsgX7zqfwNZFT5Mkxrdrh8
 &callback=loadedGoogleMap"></script>
+        </div>        
     </section>
-    </body>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>    
+    <script>
+        AOS.init();
+    </script>
+    <script type="text/javascript">    
+
+
+
+function myFunction() {
+
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+
+
+
+
+
+    var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.call(t))for(var c in t)Object.prototype.hasOwnProperty.call(t,c)&&o.call(r,t[c],c,t);else for(var e=0,l=t.length;l>e;e++)o.call(r,t[e],e,t)};
+    var hamburgers = document.querySelectorAll(".hamburger");
+    if (hamburgers.length > 0) {
+      forEach(hamburgers, function(hamburger) {
+        hamburger.addEventListener("click", function() {
+          this.classList.toggle("is-active");
+        }, false);
+      });
+    }
+
+   
+ /**
+   * forEach implementation for Objects/NodeLists/Arrays, automatic type loops and context options
+   *
+   * @private
+   * @author Todd Motto
+   * @link https://github.com/toddmotto/foreach
+   * @param {Array|Object|NodeList} collection - Collection of items to iterate, could be an Array, Object or NodeList
+   * @callback requestCallback      callback   - Callback function for each iteration.
+   * @param {Array|Object|NodeList} scope=null - Object/NodeList/Array that forEach is iterating over, to use as the this value when executing callback.
+   * @returns {}
+   */  
+
+</script>
+</body>
 </html>
-
-
-		
