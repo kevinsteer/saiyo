@@ -9,7 +9,7 @@ var en = $('#entry').offset().top;
 var delta = 400;
 var delay = 600;
 var navbarHeight = $('header').outerHeight();
-
+    
 //on scroll, let the interval function know the user has scrolled
 $(window).scroll(function(event){
     didScroll = true;
@@ -25,6 +25,9 @@ setInterval(function(){
 
 function hasScrolled() {
     //do stuff here
+    if (/Mobi/.test(navigator.userAgent)){
+        return;
+    }
     var st = $(this).scrollTop();
     
     if(st == jb){ 
