@@ -148,38 +148,7 @@ a {
     margin: 0 auto;
 }
     
-    
-    
-/* Styles */
-  .header {
-  background-color: #fff;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-  position: fixed;
-      
-  width: 100%;
-  z-index: 3;
-  line-height: 500%; 
-}
 
-.header ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  overflow: hidden;
-  background-color: #fff;
-}
-
-    #myDropdown {
-        margin-top: 20px;
-    }
-
-.header .logo {
-  display: block;
-  float: left;
-  font-size: 2em;
-  padding: 10px 20px;
-  text-decoration: none;
-}
 
     
 .newsheader {
