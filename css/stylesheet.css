@@ -600,8 +600,9 @@ a {
 }
 
 #jobs .btn { 
-    position:absolute;top:40%;
-    position:absolute;left:70%;
+    position: absolute;
+    top: 40%;
+    left:70%;
 }
 
 /*----- Workplace Culture --*/
