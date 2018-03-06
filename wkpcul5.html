@@ -2,10 +2,12 @@
 <html lang="ja">
 <head> 
 <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=0.5,user-scalable=yes,initial-scale=1.0" />
+
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">    
-<link rel="stylesheet" href="css/stylesheet.css">
+<link rel="stylesheet" href="css/stylesheet.css" media="screen and (min-width:481px)">
 <link rel="stylesheet" href="css/stylesheet-oneday.css">
-<link href="../js/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylesheet-phone_wkpcul.css" media="screen and (max-width:480px)">
+
     <style type="text/css">
   <!--
              
@@ -17,149 +19,6 @@ body {
         width:100%;
         height:100%;
             }
-
-@media screen and (max-width:320px){
-    
-html {
-        height:80%;
-        width:100%;
-        display: inline-block;
-        box-sizing: border-box;
-          }
-body {
-        height:80%;
-        width:100%;
-        display: inline-block;
-        overflow-x: hidden;
-          }
-.return-button {
-        margin-top: 10px;
-        display: block;
-        position: fixed;
-        height: 65px;
-        width: 65px;
-        background: url(image/backbtnot.png)center bottom no-repeat;
-        background-size: 100% auto;
-        box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
-        z-index: 1;
-            }
-    
-.return-button-in {
-        height: 100%;
-        width: 100%;
-        display: block;
-        text-indent: -9999px;
-            }
-#main-visual{
-        height: 450px;
-        background: url(../image/8G4A0892.jpg) no-repeat center center;
-        background-size: cover;
-        overflow: hidden;
-             }
-#main-visual h1
-        {
-        display: -webkit-flex;
-        display: flex;
-        text-align: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        align-items: center;
-        -webkit-flex-direction:row-reverse;
-        flex-direction:row-reverse;
-        position: relative;
-        margin: auto;
-        height: 550px;
-        width: 100%;
-        font-size: 300%;
-        color: white;
-        background-color: rgba(0,0,0,0.1);
-              }
-#gallery{
-        width: 100%;
-              }
-#gallery h2 {
-        display: block;
-        font-size: 2.1em;
-        -webkit-margin-before: 0.83em;
-        -webkit-margin-after: 0.83em;
-        -webkit-margin-start: 0px;
-        -webkit-margin-end: 0px;
-        font-weight: bold;
-        color: #2d2d2d;
-        text-align: center;
-        padding-top: 40px;
-            }
-#gallery p {
-        padding: 10px 0px;
-        color:#2d2d2d;
-        text-align: center;
-        line-height: 1.7rem;
-        font-weight: 200;
-        display: inline-block;
-        width: 100%;
-            }
-#gallery p:before{
-        content: "";
-        display: block;
-        border-top: 2px solid #2cb4d6;
-        width: 245px;
-        text-align: center;
-        margin: auto;
-        padding-top:7%;
-            }
-#gallery .right{
-    float: none;
-            }
-#gallery img{
-        width: 100%;
-        height:60%;  
-        display: block;
-            } 
-.gallery1{
-        width: 100%;
-        height:100%;
-        padding-top:5%;
-        padding-bottom:5%;
-        display: inline;
-        box-sizing: border-box;
-        background-color: white;
-            }
-.gallery2 {
-        width: 100%;
-        height:100%;
-        padding-top:5%;
-        padding-bottom:5%;
-        display:block;
-        box-sizing: border-box;
-        background-color: white;
-              }
-.gallery3 {
-        width: 100%;
-        height:100%;
-        padding-top:5%;
-        padding-bottom:5%;
-        display: block;
-        box-sizing: border-box;
-        background-color: white;
-              }             
-.gallery4 {
-        width: 100%;
-        height:100%;
-        padding-top:5%;
-        padding-bottom:5%;
-        display: block;
-        box-sizing: border-box;
-        background-color: white;
-              }             
-.gallery5 {
-        width: 100%;
-        height:100%;
-        padding-top:5%;
-        padding-bottom:5%;
-        display: block;
-        box-sizing: border-box;
-        background-color: white;
-    }}
               
 -->
   </style>
@@ -173,29 +32,29 @@ body {
     <section id="main-visual">
         <h1>WORKPLACE <br/>+<br/>CULTURE</h1>
     </section>
-    <section id="gallery"　>
+    <section id="gallery">
         <div class="gallery1">
-            <img alt="galeery1-img" src="image/8G4A0917.jpg">
+            <img alt="gallery1-img" class="left" src="image/8G4A0917.jpg">
             <h2>Free Work Space</h2>
             <p class="right">広々としたオフィスの中は全体がフリースペース。<br>快適に働きやすい環境があります</p>
         </div>
         <div class="gallery2">
-            <img alt="galeery2-img" src="image/mtg2.jpg">
+            <img alt="gallery2-img" class="right" src="image/mtg2.jpg">
             <h2>Meeting Room</h2>
             <p>オフィスの一角にある会議室<br>開放的な空間で様々なアイデアが飛び交います</p>
         </div>
         <div class="gallery3">
-            <img alt="galeery3-img" src="image/server.jpg">
+            <img alt="gallery3-img" class="left" src="image/server.jpg">
             <h2>Sophisticated Office</h2>
             <p class="right">機能性を兼ね備えた洗練されたオフィス<br>モデルルームのようなオフィスの椅子は座り心地も抜群</p>
         </div>
         <div class="gallery4">
-            <img alt="galeery4-img" src="image/pexels-photo-886465.jpeg">
+            <img alt="gallery4-img" class="right" src="image/pexels-photo-886465.jpeg">
             <h2>Free Drink</h2>
             <p>ウォーターサーバーやドリップコーヒーが利用可能です<br>好きなドリンクを飲みながら作業OKです<br>
         </div>
         <div class="gallery5">
-            <img alt="galeery5-img" src="image/server2.jpeg">
+            <img alt="gallery5-img" class="left" src="image/server2.jpeg">
             <h2>Personal Space</h2>
             <p class="right">個室も完備<br>スカイプ利用時や集中して作業したい時などは個室も利用できます。</p>
         </div>
