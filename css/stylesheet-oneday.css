@@ -1,5 +1,5 @@
 .jobtype {
-     background: url(../image/seng.jpg)no-repeat center fixed;
+     background: url(../image/common/peoplebg.jpg)no-repeat center fixed;
     background-size: cover;
     color: #383838;
 }
@@ -32,16 +32,16 @@
 
 .oneday-title h2 {
     display: block;
-    width: 50%;
+    width: 175px;
     color: #2cb4d6;
+    text-align: center;
     text-indent: 5px;
     font-weight: 500;
     font-size: 15px;
-    padding-left: 5px;
     font-family: 'Noto Sans Japanese';
     text-shadow: none;
     background: white;
-    border-radius: 5px 0;
+    border-radius: 0 0 5px 5px;
 }
 
 .next-button {
@@ -62,7 +62,7 @@
     position: fixed;
     height: 70px;
     width: 70px;
-    background: url(/image/bckbtn.png) center bottom no-repeat;
+    background: url(/image/common/bckbtn.png) center bottom no-repeat;
     background-size: 70px auto;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
     z-index: 1;
@@ -184,7 +184,27 @@
     font-weight: 300;
     font-size: 20px;
     top: 0;
-    
+}
+
+
+
+p.ttl {
+    position: fixed;
+    opacity: 1;
+    left: 20px;
+    top: 180px;
+    z-index: -1
+    }
+
+.pimg {
+    height: 65%;
+    position: fixed;
+    margin: 0;
+    transform: translateY(10px);
+    bottom: 0;
+    left: 250px;
+    color: #fff;
+    z-index: -2;
 }
 
 /*---- Jobs Media Query ---*/
@@ -192,7 +212,7 @@
 @media only screen and (min-device-width:320px) and (max-device-width: 440px) and (orientation: portrait){
     
     .jobtype {
-        background: url(/image/seng_mob.jpg) no-repeat center top fixed;
+        background: url(/image/people1/seng_mob.jpg) no-repeat center top fixed;
         -webkit-background-size: contain;    
         background-size: contain; 
     }
