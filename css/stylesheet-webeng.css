@@ -1,5 +1,5 @@
 body {
-     background: url(../image/weng.jpg)no-repeat center fixed;
+     background: url(../image/people2/weng.jpg)no-repeat center fixed;
     background-size: cover;
     color: #383838;
 }
@@ -7,7 +7,7 @@ body {
 @media only screen and (min-device-width:320px) and (max-device-width: 440px) and (orientation: portrait){
     
     body {
-     background: url(/image/weng_mob.jpg) no-repeat center top fixed;
+     background: url(/image/people2/weng_mob.jpg) no-repeat center top fixed;
      background-size: contain;    
     }
 }

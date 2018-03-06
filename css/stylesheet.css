@@ -171,7 +171,7 @@ a {
 }
 
 .btn {
-    background: url(/image/morebtn.png) center bottom no-repeat;
+    background: url(/image/common/morebtn.png) center bottom no-repeat;
     background-size: 150px auto;
     width: 150px;
     height: 40px;
@@ -182,7 +182,7 @@ a {
 }
 
 .btn:hover {
-    background: url(/image/morebtn_hvr.png) no-repeat center bottom;
+    background: url(/image/common/morebtn_hvr.png) no-repeat center bottom;
     background-size: 150px auto;   
 }
 
@@ -230,7 +230,7 @@ a {
     display: table-cell;
     width: 150px;
     text-indent: -9999px;
-    background: url(../image/logo.svg) no-repeat center center;
+    background: url(../image/common/logo.svg) no-repeat center center;
     background-size: auto 85%;
     vertical-align: middle;
 }
@@ -282,7 +282,7 @@ a {
     width: 140px;
     height: 60px;
     text-align: center;
-    background: url(../image/entrybtn.svg) no-repeat center center;
+    background: url(../image/common/entrybtn.svg) no-repeat center center;
     background-size: cover;
     overflow: hidden;
     white-space: nowrap;
@@ -297,7 +297,7 @@ a {
 }
 
 .button-top:hover {
-    background: url(../image/entrybtnhvr.svg) no-repeat center center;
+    background: url(../image/common/entrybtnhvr.svg) no-repeat center center;
     background-size: cover;
 }
 
@@ -312,7 +312,7 @@ a {
 
 .catchcopy {
     display: block;
-    background: url(../image/catchcopy.svg) no-repeat;
+    background: url(../image/common/catchcopy.svg) no-repeat;
     background-position: center;
     padding-top: 29%;
     width: 56%;
@@ -328,7 +328,7 @@ a {
 }
 .SwayC1 {
     position: absolute;
-    background: url(../image/balloonrd.svg) no-repeat;
+    background: url(../image/common/balloonrd.svg) no-repeat;
     left: 44%;
     top: 60px;
     width: 5%;
@@ -338,7 +338,7 @@ a {
 
 .SwayL1 {
     position: absolute;
-    background: url(../image/balloonbl.svg) no-repeat center center;
+    background: url(../image/common/balloonbl.svg) no-repeat center center;
     top: 41%;
     left: 13%;
     /*--- value 35px --*/
@@ -349,7 +349,7 @@ a {
 
 .SwayR1 {
     position: absolute;
-    background: url(../image/balloonclr.svg) no-repeat center center;
+    background: url(../image/common/balloonclr.svg) no-repeat center center;
     top: 27%;
     right: 9%;
     /*--- value 35px --*/
@@ -377,7 +377,7 @@ a {
 .Rise1 {
     display: block;
     position: relative;
-    background: url(/image/city-01.svg) no-repeat center bottom;
+    background: url(/image/common/city-01.svg) no-repeat center bottom;
     width: 100%;
     height: 140px;
     
@@ -719,7 +719,7 @@ a {
 }
 
 .flow-bg {
-    background: url(../image/flow.png) center center no-repeat;
+    background: url(../image/common/flow.png) center center no-repeat;
     background-size: contain;
     height: 500px;
 }
@@ -1248,7 +1248,7 @@ a {
     }
     
     #jobs .btn:hover {
-        background: url(/image/morebtn.png) center center;
+        background: url(/image/common/morebtn.png) center center;
         background-size: 275px auto;
     }
     
@@ -1319,7 +1319,7 @@ a {
     }
     
     .flow-bg {
-        background: url(/image/flow_mob.png) center center no-repeat;
+        background: url(/image/common/flow_mob.png) center center no-repeat;
         background-size: contain;
         height: 1500px;
     }
