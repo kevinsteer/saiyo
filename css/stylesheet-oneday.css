@@ -1,5 +1,5 @@
 .jobtype {
-     background: url(../image/takadabg.jpg)no-repeat center fixed;
+     background: url(../image/seng.jpg)no-repeat center fixed;
     background-size: cover;
     color: #383838;
 }
@@ -60,10 +60,10 @@
     margin-top: 10px;
     display: block;
     position: fixed;
-    height: 90px;
-    width: 90px;
-    background: url(/image/backbtnot.png) center bottom no-repeat;
-    background-size: 90px auto;
+    height: 70px;
+    width: 70px;
+    background: url(/image/bckbtn.png) center bottom no-repeat;
+    background-size: 70px auto;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -92,7 +92,7 @@
 .wrapper-content {
     height: 100%;
     float: right;
-    margin-right: 300px;
+    margin-right: 250px;
     border-left: 3px white solid;
 }
 
@@ -185,4 +185,87 @@
     font-size: 20px;
     top: 0;
     
+}
+
+/*---- Jobs Media Query ---*/
+
+@media only screen and (min-device-width:320px) and (max-device-width: 440px) and (orientation: portrait){
+    
+    .jobtype {
+        background: url(/image/seng_mob.jpg) no-repeat center top fixed;
+        -webkit-background-size: contain;    
+        background-size: contain; 
+    }
+    
+    .title-box {
+        background-color: #2cb4d6;
+        width: 100%;
+        height: 140px;
+        position: fixed;
+        z-index: 1;
+    }  
+    
+    .oneday-title h1 {
+        font-size: 4.2rem;
+        text-align: center;
+        text-shadow: none;
+        margin-left: 125px; 
+    }   
+    
+    .oneday-title h2 {
+        margin: 0 auto;
+        font-size: 1.7em;
+        color: #fff;
+        background: none;
+        text-align: center;
+        font-weight: 200;
+        padding-left: 110px;
+    }
+    
+    .return-button {
+        margin: 0;
+        height: 140px;
+        width: 140px;
+        background-size: 140px auto;
+        box-shadow: 0px 0px 0px rgba(0,0,0,0.0);
+        z-index: 2;
+    }
+    
+    .content-day {
+        font-size: 2.2em;
+        width: 650px;
+        height: 230px;
+        left: -750px;
+        padding: 35px 35px 0px 35px;
+    }
+ 
+    .content-title {
+        width: 40px;
+        font-size: 30px;
+        line-height: 1.3em;
+    }
+    
+    .wrapper-content {
+        border-left: none;
+        margin: 0;
+    }
+   
+    .dot::after { 
+       display: none;
+    }
+    
+    .browser {
+        display: none !important;
+    }
+    
+    .time {
+        position: absolute;
+        top: 10px;
+        font-weight: 600;
+        font-size: 1em;
+    }
+    
+    .oneday-title {
+        width: 800px;    
+    }
 }

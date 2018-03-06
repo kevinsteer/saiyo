@@ -144,6 +144,7 @@ body {
     margin: 0;
     font-family: "Open Sans", "Noto Sans Japanese", sans-serif;
     font-size: 100%;
+    min-width: 1000px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -170,7 +171,7 @@ a {
 }
 
 .btn {
-    background: url(/image/btn_test_normalx4.png) center bottom no-repeat;
+    background: url(/image/morebtn.png) center bottom no-repeat;
     background-size: 150px auto;
     width: 150px;
     height: 40px;
@@ -181,7 +182,7 @@ a {
 }
 
 .btn:hover {
-    background: url(/image/btn_test_hoverx4.png) no-repeat center bottom;
+    background: url(/image/morebtn_hvr.png) no-repeat center bottom;
     background-size: 150px auto;   
 }
 
@@ -206,7 +207,7 @@ a {
 .menu-wrapper {
     width: 100%;
     position: fixed;
-    min-width: 1280px;
+    min-width: 1000px;
     z-index: 1000;
     -webkit-transition: top 0.3s cubic-bezier(0.23, 1 ,0.58, 1);
     transition: transform 0.3s cubic-bezier(0.23, 1 ,0.58, 1);
@@ -599,8 +600,9 @@ a {
 }
 
 #jobs .btn { 
-    position:absolute;top:40%;
-    position:absolute;left:70%;
+    position: absolute;
+    top: 40%;
+    left:70%;
 }
 
 /*----- Workplace Culture --*/
@@ -717,7 +719,7 @@ a {
 }
 
 .flow-bg {
-    background: url(../image/FLOW@1x.png) center center no-repeat;
+    background: url(../image/flow.png) center center no-repeat;
     background-size: contain;
     height: 500px;
 }
@@ -1006,6 +1008,10 @@ a {
 
 @media only screen and (min-device-width:320px) and (max-device-width: 440px) and (orientation: portrait){
     
+    body {
+        min-width: 440px;
+    }
+    
     .menu-inner {
         display: none !important;
     }
@@ -1135,8 +1141,12 @@ a {
         position: relative;
         width: 100%;
         text-align: center;
-        font-size: 4em;
+        font-size: 3em;
         margin-bottom: 20px;
+    }
+    
+    .newsheader-font {
+        font-weight: 400;
     }
     
     .news-item {
@@ -1149,12 +1159,16 @@ a {
     .newsdate {
         width: 100px;
         height:auto;
-        font-size: 26px
+        font-size: 28px
+    }
+    
+    .newstag {
+        font-size: 1.1em;
     }
     
     .newsitem-text {
-        font-size: 40px;
-        font-weight: 300;
+        font-size: 35px;
+        font-weight: 200;
     }
     
     .pm-title {
@@ -1234,8 +1248,58 @@ a {
     }
     
     #jobs .btn:hover {
-        background: url(/image/btn_test_normalx4.png) center center;
+        background: url(/image/morebtn.png) center center;
         background-size: 275px auto;
+    }
+    
+    .workplace-wrapper {
+        height: 1000px;
+        background: url(/image/8G4A0892.jpg) no-repeat center fixed;
+    }
+    
+    .workplace-title-wrapper {
+        -webkit-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+    
+    .workplace-title-contents {
+        margin-bottom: 75px;
+        width: 100%;
+        height: auto;
+        font-size: 90px;
+        font-weight: bold;
+        border: none;
+    }
+    
+    .middleplus {
+        font-size: 70px;
+        font-weight: inherit;
+    }
+    
+    .workplace-title-contents .txtJp::before {
+        border-top: 6px solid #2cb4d6;
+        width: 400px;
+    }
+    
+    .workplace-title-contents .txtJp {
+        font-weight: 300;
+        font-size: 50px;
+    }
+    
+    #workplace .btn-wrapper {
+        margin: 0 auto;
+    }
+    
+    #workplace .btn {
+        position: relative;
+        left: auto;
+        margin: 0 auto;
+        width: 275px;
+        height: 90px;
+        background-position: center center;
+        background-size: 275px auto;
+        border: 7px solid white;
     }
     
     .flow-title {
@@ -1255,7 +1319,7 @@ a {
     }
     
     .flow-bg {
-        background: url(/image/FLOWmbl.png) center center no-repeat;
+        background: url(/image/flow_mob.png) center center no-repeat;
         background-size: contain;
         height: 1500px;
     }
@@ -1327,5 +1391,5 @@ a {
 
     .access-title .txtJp {
         font-size: 45px;
-    }
+    }    
 }
