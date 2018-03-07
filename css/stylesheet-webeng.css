@@ -10,4 +10,9 @@ body {
      background: url(/image/people2/weng_mob.jpg) no-repeat center top fixed;
      background-size: contain;    
     }
+    
+    p.ttl {
+        left: 10px;
+        top: 750px;
+    }
 }

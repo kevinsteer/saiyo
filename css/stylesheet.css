@@ -779,6 +779,18 @@ a {
     background: #60defd;
 }
 
+.WTDLYbutton.newgrad {
+    background: #3a3a3a;
+}
+
+.WTDLYbutton.newgrad a:hover {
+    cursor: default;
+}
+
+.newgrad .btn-ctn {
+    color: #7f7f7f;
+}
+
 .btn-ctn {
     height: 100%;
     width: 100%;

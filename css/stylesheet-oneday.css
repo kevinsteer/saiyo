@@ -212,7 +212,7 @@ p.ttl {
 @media only screen and (min-device-width:320px) and (max-device-width: 440px) and (orientation: portrait){
     
     .jobtype {
-        background: url(/image/people1/seng_mob.jpg) no-repeat center top fixed;
+        background: url(/image/people1/) no-repeat center top fixed;
         -webkit-background-size: contain;    
         background-size: contain; 
     }
@@ -287,5 +287,16 @@ p.ttl {
     
     .oneday-title {
         width: 800px;    
+    }
+    
+    p.ttl {
+        left: -30px;
+        top: 750px;
+    }
+
+    .pimg {
+        height: 643px;
+        transform: translateY(0px);
+        left: -100px;
     }
 }
