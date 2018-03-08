@@ -1,10 +1,5 @@
 @media only screen and (min-device-width:320px) and (max-device-width: 440px) and (orientation: portrait){
     
-    .jobtype {
-     background: url(/image/common/peoplebg_mob.jpg) no-repeat center top fixed;
-     background-size: contain;    
-    }
-    
     p.ttl {
         position: fixed;
         left: 10px;
