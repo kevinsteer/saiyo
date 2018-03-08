@@ -186,25 +186,29 @@
     top: 0;
 }
 
-
+.pplewrap {
+    height: 80%;
+    width: 40%;
+    position: fixed;
+    bottom: 0px;
+    margin: 20px 0 0 0;
+    z-index: -2;
+    padding: 50px;
+}
 
 p.ttl {
-    position: fixed;
+    position: relative;
     opacity: 1;
     left: 20px;
-    top: 180px;
-    z-index: -1
     }
 
 .pimg {
-    height: 65%;
-    position: fixed;
+    position: relative;
     margin: 0;
-    transform: translateY(10px);
     bottom: 0;
+    transform: translateY(10px);
     left: 250px;
     color: #fff;
-    z-index: -2;
 }
 
 /*---- Jobs Media Query ---*/
@@ -239,6 +243,7 @@ p.ttl {
         background: none;
         text-align: center;
         font-weight: 200;
+        width: auto;
         padding-left: 110px;
     }
     
@@ -289,14 +294,24 @@ p.ttl {
         width: 800px;    
     }
     
+    .pplewrap {
+        height: 80%;
+        width: 40%;
+        position: fixed;
+        bottom: 0px;
+        margin: 20px 0 0 0;
+        z-index: -2;
+        padding: 50px;
+    }
+
     p.ttl {
+        position: fixed;
         left: -30px;
-        top: 750px;
+        bottom: 650px;
     }
 
     .pimg {
-        height: 643px;
-        transform: translateY(0px);
+        position: fixed;
         left: -100px;
     }
 }

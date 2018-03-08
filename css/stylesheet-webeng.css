@@ -12,7 +12,8 @@ body {
     }
     
     p.ttl {
+        position: fixed;
         left: 10px;
-        top: 750px;
+        bottom: 650px;
     }
 }
