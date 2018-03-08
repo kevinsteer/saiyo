@@ -99,24 +99,24 @@
     
     #gallery p {
         padding: 20px;
+        font-size: 35px;
+        line-height: normal;
     }
     
     #gallery h2 {
-        font-size: 2em;
-    }
-    
-    .return-button {
-        height: 70px;
-        width: 70px;
-        background-size: 70px auto;
+        font-size: 70px;
     }
     
     #gallery img {
         width: 100%;
+        height: 800px;
+        border-radius: 10px;
+        margin: 30px;
     }
     
-    #gallery p {
-        display: block;
+    #gallery p:before {
+        border-top: 6px solid #2cb4d6;
+        width: 400px;
     }
     
     .galleryL {
@@ -131,10 +131,7 @@
 
     .gctn {
         width: 100%;
-    }
-    
-    .access-title-wrap {
-        
+        height: 600px;
     }
 
 }
